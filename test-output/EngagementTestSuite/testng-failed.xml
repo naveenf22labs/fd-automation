@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [EngagementTestSuite]">
-  <test thread-count="5" name="WeddingDiamondsBandsFlowTest(failed)">
+  <test thread-count="5" name="EngagementSettingFlowTest(failed)">
     <classes>
-      <class name="weddings.library.com.DiamondBands">
+      <class name="library.com.EngagementSettingFlow">
         <methods>
           <include name="tearDown"/>
           <include name="launchUrl"/>
           <include name="closeUrl"/>
-          <include name="diamondBandFlow"/>
+          <include name="startWithASetting"/>
         </methods>
-      </class> <!-- weddings.library.com.DiamondBands -->
+      </class> <!-- library.com.EngagementSettingFlow -->
     </classes>
-  </test> <!-- WeddingDiamondsBandsFlowTest(failed) -->
+  </test> <!-- EngagementSettingFlowTest(failed) -->
+  <test thread-count="5" name="WeddingStackRingsFlowTest(failed)">
+    <classes>
+      <class name="weddings.library.com.StackingRings">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchUrl"/>
+          <include name="stackinRingsFlow"/>
+          <include name="closeUrl"/>
+        </methods>
+      </class> <!-- weddings.library.com.StackingRings -->
+    </classes>
+  </test> <!-- WeddingStackRingsFlowTest(failed) -->
 </suite> <!-- Failed suite [EngagementTestSuite] -->

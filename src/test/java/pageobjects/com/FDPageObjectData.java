@@ -52,11 +52,20 @@ public class FDPageObjectData
     
     private By eternityBandXpath=By.xpath("//span[text()='Eternity Bands']");
     private By goldBandXpath=By.xpath("//span[text()='Gold Bands']");
-
+    //---------------------Jewelry--------------------
     
+    private By jewelryXpath=By.xpath("//span[text()='Jewelry']");
+    private By earRingsXpath=By.xpath("//span[text()='Earrings']");
+    
+    private By earRingsPlp=By.id("engagement-rings-1");
+    
+    private By necklesXpath=By.xpath("//span[text()='Necklaces']");
+    private By necklaceButtonXpath=By.xpath("(//button[text()='Select this necklace'])[2]");
+    
+    private By selectDiamondForNecklace=By.name("diamond-row-746984FD");
     
         
-    
+    private By  addDiamondToNecklaceButtonXpath= By.xpath("(//button[text()='Add diamond to necklace'])[1]");
     
     
     
@@ -109,7 +118,7 @@ public class FDPageObjectData
     public void selectThisSetting() {
     	driver.findElement(selectThisSettingButton).click();
     }
-
+            //can use this method  to entire project bcz i developed with unique xpath
     public void searchSettingForThisDiamond() {
         driver.findElement(searchSettingButton).click();
     }
@@ -208,5 +217,40 @@ public class FDPageObjectData
     public void  selectGoldBand()
     {
     	driver.findElement(goldBandXpath).click();
+    }
+    //-----------------------------------------------Jewelry--------------------------
+    
+    public void jewelryNav()
+    {
+    	driver.findElement(jewelryXpath).click();
+    }
+    
+    public void earRingsOption()
+    {
+    	driver.findElement(earRingsXpath).click();
+    }
+    public void jewleryPlp()
+    {
+    	driver.findElement(earRingsPlp).click();
+    }
+    public void selectnecklesOption()
+    {
+    	driver.findElement(necklesXpath).click();
+    }
+    public void selectThisNecklaceButton()
+    {
+    driver.findElement(necklaceButtonXpath).click();
+    }
+    public void selectDiamondFromNecklacesPlp() 
+    {
+    	 WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(20));
+         WebElement necklacePlp = wait1.until(ExpectedConditions.elementToBeClickable(selectDiamondForNecklace));
+         necklacePlp.click();
+    	//driver.findElement(selectDiamondForNecklace).click();
+    }
+    
+    public void addDiamondToNecklaceButton()
+    {
+    	driver.findElement(addDiamondToNecklaceButtonXpath).click();
     }
 }
