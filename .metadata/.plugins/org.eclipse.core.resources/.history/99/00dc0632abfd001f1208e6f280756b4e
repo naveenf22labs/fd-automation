@@ -1,0 +1,17 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class EternityBand extends FDUtils
+{
+	
+	public void eternityBandFlow()
+	{
+    	FDPageObjectData eternityBand= new FDPageObjectData((ChromeDriver) driver);
+
+	}
+
+}

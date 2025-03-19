@@ -1,0 +1,20 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class AnniversaryRings extends FDUtils
+
+{
+  
+	public void anniversaryRingFlow()
+	{
+    	FDPageObjectData anniversary= new FDPageObjectData((ChromeDriver) driver);
+    	
+    	anniversary.clickWeddingLink();
+    	anniversary.selectAnniversaryOption();
+
+	}
+}

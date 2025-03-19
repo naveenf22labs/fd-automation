@@ -1,0 +1,24 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+
+public class MenWeddingBands  extends FDUtils
+{
+
+	
+	@Test
+	public void menWeddingBands() throws InterruptedException
+	{
+		  FDPageObjectData weddingPage= new FDPageObjectData((ChromeDriver) driver);
+		  
+		  weddingPage.clickWeddingLink();
+		  
+		  weddingPage.selectMenWeddingoption();
+		  Thread.sleep(2000);
+		
+	}
+}

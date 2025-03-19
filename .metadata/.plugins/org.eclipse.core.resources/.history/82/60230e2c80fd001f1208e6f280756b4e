@@ -1,0 +1,17 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+
+public class MenWeddingBands  extends FDPageObjectData
+{
+
+	
+	public void menWeddingBands()
+	{
+		  FDPageObjectData engagementPage= new FDPageObjectData((ChromeDriver) driver);
+
+		
+	}
+}

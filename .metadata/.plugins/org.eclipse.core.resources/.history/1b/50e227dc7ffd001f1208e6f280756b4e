@@ -1,0 +1,12 @@
+package weddings.library.com;
+
+public class MenWeddingBands 
+{
+
+	
+	public void menWeddingBands()
+	{
+		
+		
+	}
+}

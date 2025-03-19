@@ -1,0 +1,26 @@
+package jewelry.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+
+public class EarRings
+{
+    public void jewelryEarRingFlow()
+    {
+    	FDPageObjectData earRings= new FDPageObjectData((ChromeDriver) driver);
+    	
+    	earRings.jewelryNav();
+    	earRings.earRingsOption();
+    	earRings.closePopUp();
+    	earRings.jewleryPlp();
+    	earRings.doubleClickReamazeWidget();
+    	earRings.addToCartButton();
+    	earRings.proceedToCheckout();
+    	earRings.checkoutValidation();
+    	
+    }
+	
+
+
+}

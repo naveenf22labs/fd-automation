@@ -1,0 +1,104 @@
+package fd.fd;
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.X509Certificate;
+import java.time.Duration;
+import java.util.List;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.online.HttpClient;
+
+public class BrokenLink {
+
+	  public static void main(String[] args) {
+	        // Setup WebDriver
+	        WebDriver driver = new ChromeDriver();
+	        driver.manage().deleteAllCookies();
+	        driver.manage().window().maximize();
+
+	        try {
+	            driver.get("https://www.frankdarling.com");
+
+	            // Find all anchor tags on the page
+	            List<WebElement> links = driver.findElements(By.tagName("a"));
+
+	            // Loop through each link and check if it is working
+	            System.out.println("Checking for working and broken links...");
+	            for (WebElement link : links) {
+	                String url = link.getAttribute("href");
+	                if (url != null && !url.isEmpty()) {
+	                    checkLinkStatus(url);
+	                }
+	            }
+	        } finally {
+	            // Close the browser
+	            driver.quit();
+	        }
+	    }
+
+	    // Method to check the link status by sending an HTTP GET request
+	    public static void checkLinkStatus(String url) {
+	        try {
+	            // Skip non-HTTP/HTTPS links
+	            if (!url.startsWith("http://") && !url.startsWith("https://")) {
+	                System.out.println("Skipping non-HTTP link: " + url);
+	                return;
+	            }
+
+	            // Disable SSL verification (insecure, for testing purposes only)
+	            SSLContext sslContext = SSLContext.getInstance("TLS");
+	            sslContext.init(null, new TrustManager[]{
+	                    new X509TrustManager() {
+	                        public X509Certificate[] getAcceptedIssuers() {
+	                            return null;
+	                        }
+	                        public void checkClientTrusted(X509Certificate[] certs, String authType) {
+	                        }
+	                        public void checkServerTrusted(X509Certificate[] certs, String authType) {
+	                        }
+	                    }
+	            }, new java.security.SecureRandom());
+
+	            HttpClient client = HttpClient.newBuilder()
+	                    .sslContext(sslContext)
+	                    .followRedirects(HttpClient.Redirect.ALWAYS) // Automatically follow redirects
+	                    .build();
+
+	            // Create an HttpRequest with a GET method
+	            HttpRequest request = HttpRequest.newBuilder()
+	                    .uri(URI.create(url))
+	                    .timeout(Duration.ofSeconds(10)) // Set timeout for the request
+	                    .build();
+
+	            // Send the GET request and get the response
+	            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+	            // Get the HTTP status code
+	            int statusCode = response.statusCode();
+
+	            // Check if the link is working (HTTP Status Code 200)
+	            if (statusCode == 200) {
+	                System.out.println("Working link: " + url);
+	            } else {
+	                System.out.println("Broken link: " + url + " | Response Code: " + statusCode);
+	            }
+
+	        } catch (IOException | InterruptedException | NoSuchAlgorithmException e) {
+	            // If there was an error, it indicates the link might be broken
+	            System.out.println("Broken link: " + url + " | Error: " + e.getMessage());
+	        }
+	    }
+	
+}

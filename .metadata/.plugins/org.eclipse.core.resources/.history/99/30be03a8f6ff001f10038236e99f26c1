@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite">
+    
+       <test name="MenWeddingBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.MenWeddingBands" />
+        </classes>
+    </test>
+    
+    <test name="EngagementSettingFlowTest" >
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+           
+</suite>

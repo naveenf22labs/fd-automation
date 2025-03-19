@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite">
+    
+       
+    
+      
+    <test name="jewelryNecklacesFlowTest">
+        <classes>
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+    <test name="EngagementSettingFlowTest"  enabled="false">
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+
+    
+           
+</suite>

@@ -1,0 +1,26 @@
+package jewelry.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class GiftGuide extends FDUtils
+{
+	@Test
+	public void giftGuideFlow()
+	{
+          FDPageObjectData gift= new FDPageObjectData((ChromeDriver) driver);
+    	
+    	gift.jewelryNav();
+    	gift.giftGuide();
+    	gift.selectGiftGuidePlp();
+    	gift.selectThisSetting();
+    	//reusability the same method
+    	gift.searchSettingForThisDiamond();
+    	gift.selectDiamond1();
+    	
+	}
+
+}

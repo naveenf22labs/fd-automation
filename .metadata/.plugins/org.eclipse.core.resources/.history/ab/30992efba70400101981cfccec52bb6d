@@ -1,0 +1,20 @@
+package jewelry.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class GiftGuide extends FDUtils
+{
+	public void giftGuideFlow()
+	{
+          FDPageObjectData gift= new FDPageObjectData((ChromeDriver) driver);
+    	
+    	gift.jewelryNav();
+    	gift.giftGuide();
+    	gift.selectGiftGuidePlp();
+    	
+	}
+
+}

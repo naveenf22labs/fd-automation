@@ -1,0 +1,26 @@
+package jewely.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class EarRings  extends FDUtils
+{
+
+	@Test
+	public void earRingsFlow() throws InterruptedException
+	{
+    	FDPageObjectData earRings= new FDPageObjectData((ChromeDriver) driver);
+    	
+    	earRings.jewelryNav();
+    	earRings.earRingsOption();
+    	earRings.jewleryEarRingsPlp();
+    	earRings.addToCartButton();
+    	earRings.proceedToCheckout();
+    	earRings.checkoutValidation();
+
+		
+	}
+}

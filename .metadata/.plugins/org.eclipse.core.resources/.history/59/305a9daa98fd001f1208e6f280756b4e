@@ -1,0 +1,22 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class DiamondBands extends FDUtils
+{
+	public void diamondBandFlow() 
+	{
+    	FDPageObjectData diamondBand= new FDPageObjectData((ChromeDriver) driver);
+             
+    	diamondBand.clickWeddingLink();
+    	diamondBand.selectDiamondBand();
+    	diamondBand.selectDiamondBandProduct();
+    	diamondBand.addToCartButton();
+    	diamondBand.
+		
+	}
+
+}

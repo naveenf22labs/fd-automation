@@ -1,0 +1,168 @@
+package pageobjects.com;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class FDPageObjectData
+{
+
+    public ChromeDriver driver;
+    
+    public By engagementLink = By.xpath("//span[text()='Engagement']");
+    public By startWithDiamondOption = By.xpath("//span[text()='Start with a diamond']");
+    public By startWithSettingOption = By.xpath("//span[text()='Start with a setting']");
+
+    public By searchDiamondsOption = By.xpath("//span[text()='SEARCH DIAMONDS']");
+    public By reamazeWidgetIcon = By.id("reamaze-widget-icon");
+    public By closePopUpButton = By.className("klaviyo-close-form");
+    public By diamondRow = By.name("diamond-row-271100360FD"); //start with a flow diamond
+    public By diamondRowForSetting=By.name("diamond-row-89571-LGFD");// Start with a setting flow
+    public By selectThisStoneButton = By.xpath("(//button[text()='Select this stone'])[1]");
+    public By searchSettingButton = By.xpath("//button[@type='button' and @variant='primary']");
+    public By harperRingLink = By.xpath("//a[text()='The Harper ']");
+    public By addSettingToStoneButton = By.xpath("(//button[text()='Add Setting to stone'])[2]");
+    public By addStoneToSettingButton = By.xpath("(//button[text()='Add stone to setting'])[1]");
+
+    public By selectThisSettingButton = By.xpath("(//button[text()='Select this setting'])[2]");
+
+    public By checkoutButton = By.xpath("//button[text()='Checkout']");
+    //----------------------------------- Wedding properties------------------
+    private By weddingtLink = By.xpath("//span[text()='Wedding']");
+    private By menWeddingbandXPath = By.xpath("//span[text()='Mens Wedding Bands']");
+    private By menWeddingPlp= By.xpath("//a[text()='The Rigatoni']");
+
+    private By addToCartXpath=By.xpath("(//button[text()='Add to Cart'])[2]");
+    
+    private By anniversaryXpath=By.xpath("//span[text()='Anniversary Rings']");
+
+        
+    
+    
+    
+    
+
+    public FDPageObjectData(ChromeDriver driver) {
+        this.driver = driver;
+    }
+
+    public void clickEngagementLink() {
+        driver.findElement(engagementLink).click();
+    }
+
+    public void startWithDiamond() {
+        driver.findElement(startWithDiamondOption).click();
+    }
+
+    public void searchDiamonds() {
+        driver.findElement(searchDiamondsOption).click();
+    }
+
+    public void doubleClickReamazeWidget() throws InterruptedException {
+        WebElement element = driver.findElement(reamazeWidgetIcon);
+        Actions act = new Actions(driver);
+        act.click(element).perform();
+        Thread.sleep(2000);
+       act.click().build().perform();
+       //Thread.sleep(2000);
+
+       
+    }
+
+    public void closePopUp() {
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement closePopUp = wait1.until(ExpectedConditions.elementToBeClickable(closePopUpButton));
+        closePopUp.click();
+    }
+    //Start with a Diamond flow
+    public void selectDiamond1() {
+        driver.findElement(diamondRow).click();
+    }
+    
+    public void selectDiamond2() {
+        driver.findElement(diamondRowForSetting).click();
+    }
+ 
+    public void selectThisStone() {
+        driver.findElement(selectThisStoneButton).click();
+    }
+    //select this setting button 
+    public void selectThisSetting() {
+    	driver.findElement(selectThisSettingButton).click();
+    }
+
+    public void searchSettingForThisDiamond() {
+        driver.findElement(searchSettingButton).click();
+    }
+
+    public void selectHarperRing() {
+        driver.findElement(harperRingLink).click();
+    }
+        // Diamond flow
+    public void addSettingToStone() {
+        driver.findElement(addSettingToStoneButton).click();
+    }
+    //Setting flow
+    public void addStoneToSetting() {
+        driver.findElement(addStoneToSettingButton).click();
+    }
+    public void proceedToCheckout() {
+    	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+         WebElement checkout = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
+         checkout.click();
+       // driver.findElement(checkoutButton).click();     
+        
+    }
+    
+    public void startWithSetting()
+    {
+    	driver.findElement(startWithSettingOption).click();
+    }
+    
+    public void checkoutValidation() throws InterruptedException
+    {
+        Thread.sleep(3000);
+
+    	System.out.println(driver.getTitle());
+    	String expectedTitle="Checkout - FD";
+    	String currentTitle=driver.getTitle();
+        Assert.assertEquals(currentTitle, expectedTitle);
+       // Assert.assertTrue(currentTitle.contains("Checkout - FD"));
+
+
+    }
+    //-------------------Wedding properties-----------------
+	  //Selecting wedding from nav
+    public void clickWeddingLink()
+    {
+    	driver.findElement(weddingtLink).click();
+    }
+	  //Selecting Men Wedding bands option from Wedding
+    public void selectMenWeddingoption()
+    {
+    	driver.findElement(menWeddingbandXPath).click();
+    }
+    
+    public void SelectingMenWeddingPlp()
+    {
+    	driver.findElement(menWeddingPlp).click();
+    }
+    
+    public void addToCartButton()
+    {
+    	driver.findElement(addToCartXpath).click();
+    }
+    //Anniversary option clicking from weddign nav
+    public void selectAnniversaryOption()
+    {
+    	driver.findElement(anniversaryXpath).click();
+    }
+
+    
+}

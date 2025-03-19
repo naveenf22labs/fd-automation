@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite">
+    
+        <test name="EngagementDiamondFlowTest">
+        <classes>
+           
+            <class name="library.com.EngagementDiamondFlow" />
+        </classes>
+    </test>
+
+    <test name="EngagementSettingFlowTest">
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+           
+</suite>

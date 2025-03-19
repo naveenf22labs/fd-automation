@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="EngagementTestSuite">
+    <test name="EngagementDiamondFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="library.com.EngagementDiamondFlow" />
+        </classes>
+    </test>
+
+    <test name="EngagementSettingFlowTest">
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+        <test name="AnniversaryFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="weddings.library.com.AnniversaryRings" />
+        </classes>
+    </test>
+
+    <test name="EngagementSettingFlowTest">
+        <classes>
+            <class name="weddings.library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+
+
+   
+</suite>

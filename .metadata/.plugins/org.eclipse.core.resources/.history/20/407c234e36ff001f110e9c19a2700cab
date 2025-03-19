@@ -1,0 +1,27 @@
+package jewelry.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class NecklacesFlow extends FDUtils {
+	
+	
+	 public void jewelryEarRingFlow() throws InterruptedException
+	    {
+	    	FDPageObjectData neckles= new FDPageObjectData((ChromeDriver) driver);
+	    	
+	    	neckles.jewelryNav();
+	    
+	    	neckles.closePopUp();
+	    	neckles.jewleryPlp();
+	    	neckles.doubleClickReamazeWidget();
+	    	neckles.addToCartButton();
+	    	neckles.proceedToCheckout();
+	    	neckles.checkoutValidation();
+	    	
+	    }
+
+
+}

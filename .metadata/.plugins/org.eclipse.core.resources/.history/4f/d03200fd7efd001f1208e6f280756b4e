@@ -1,0 +1,39 @@
+package library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class EngagementSettingFlow extends FDUtils
+
+{
+
+	
+	  @Test
+	    
+	     public void startWithASetting( ) throws InterruptedException
+	     {
+		  FDPageObjectData fdDriver= new FDPageObjectData((ChromeDriver) driver);
+
+	    	 
+	         fdDriver.clickEngagementLink();
+	    	 fdDriver.startWithSetting();
+	         fdDriver.selectHarperRing();
+	         fdDriver.selectThisSetting();
+	         //reusing diamond button properties only  its mentioned diamond but it works for setting as well
+	         fdDriver.searchSettingForThisDiamond(); 
+	        // engagementPage.doubleClickReamazeWidget();
+	         fdDriver.closePopUp();
+	        fdDriver.doubleClickReamazeWidget();
+	        fdDriver.selectDiamond2();
+	         fdDriver.addStoneToSetting();
+	         Thread.sleep(3000);
+	         fdDriver.proceedToCheckout();
+	         fdDriver.checkoutValidation();
+
+	    	 
+	     }
+
+}

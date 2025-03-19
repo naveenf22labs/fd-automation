@@ -1,0 +1,25 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import pageobjects.com.FDPageObjectData;
+import utils.com.FDUtils;
+
+public class GoldBands  extends FDUtils
+{
+
+	@Test
+	public void goldBands()
+	{
+		  FDPageObjectData goldBandPage= new FDPageObjectData((ChromeDriver) driver);
+		  
+		  goldBandPage.clickWeddingLink();
+		  goldBandPage.selectGoldBand();
+	    	goldBandPage.selectDiamondBandProduct();
+
+		  
+
+	}
+
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="EngagementTestSuite">
+    <test name="EngagementDiamondFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="library.com.EngagementDiamondFlow" />
+        </classes>
+    </test>
+
+    <test name="EngagementSettingFlowTest">
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+        <test name="WeddingAnniversaryFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="weddings.library.com.AnniversaryRings" />
+        </classes>
+    </test>
+
+    <test name="WeddingDiamondsBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.DiamondBands" />
+        </classes>
+    </test>
+  <test name="WeddingEternityBandsFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="weddings.library.com.EternityBand" />
+        </classes>
+    </test>
+
+    <test name="WeddingGoldBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.GoldBands" />
+        </classes>
+    </test>
+    
+    <test name="MenWeddingBandsFlowTest">
+        <classes>
+            <!-- Specify the class where your tests are defined -->
+            <class name="weddings.library.com.MenWeddingBands" />
+        </classes>
+    </test>
+
+    <test name="WeddingStackRingsFlowTest">
+        <classes>
+            <class name="weddings.library.com.StackingRings" />
+        </classes>
+    </test>
+
+   
+</suite>

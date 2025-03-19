@@ -1,0 +1,21 @@
+package weddings.library.com;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import utils.com.FDUtils;
+
+import pageobjects.com.FDPageObjectData;
+
+public class MenWeddingBands  extends FDPageObjectData
+{
+
+	
+	@Test
+	public void menWeddingBands()
+	{
+		  FDPageObjectData Page= new FDPageObjectData((ChromeDriver) driver);
+
+		
+	}
+}
