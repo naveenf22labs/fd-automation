@@ -40,7 +40,6 @@
     
     <test name="MenWeddingBandsFlowTest">
         <classes>
-           
             <class name="weddings.library.com.MenWeddingBands" />
         </classes>
     </test>
@@ -63,5 +62,17 @@
             <class name="jewelry.com.NecklacesFlow" />
         </classes>
     </test>
+   
+    <test name="jewelryTennisBraceletsFlowTest">
+        <classes>
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+        <test name="jewelryGiftGuideFlowTest">
+        <classes>
+            <class name="jewelry.com.GiftGuide" />
+        </classes>
+    </test>
+
    
 </suite>

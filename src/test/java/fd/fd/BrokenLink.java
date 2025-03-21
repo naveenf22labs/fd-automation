@@ -18,11 +18,11 @@ public class BrokenLink {
 	
 		WebDriver driver=new ChromeDriver();
 	      driver.manage().deleteAllCookies();
-	      driver.manage().window().maximize();
+	     // driver.manage().window().maximize();
 	      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	     
 	     try {
-	            // Navigate to the homepage of the website (replace with your URL)
+	          
 	            driver.get("https://www.frankdarling.com"); 
 
 	            // Find all anchor tags on the page
@@ -31,7 +31,8 @@ public class BrokenLink {
 	            // Loop through each link and check if it is broken
 	            System.out.println("Checking for broken links on the homepage...");
 	            for (WebElement link : links) {
-	                String url = link.getAttribute("href");
+	                @SuppressWarnings("deprecation")
+					String url = link.getAttribute("href");
 	                if (url != null && !url.isEmpty()) {
 	                    checkLinkStatus(url);
 	                }

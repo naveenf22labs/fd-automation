@@ -34,7 +34,7 @@ public class FDUtils
 	            ScreenshotUtil.captureScreenshot(driver, result.getName());
 	        }
 	    }
-	@AfterTest
+	//@AfterTest
 	public void closeUrl()
 	{
 		 if(driver != null) {

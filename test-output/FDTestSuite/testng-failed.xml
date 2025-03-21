@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FDTestSuite]">
+  <test thread-count="5" name="jewelryNecklacesFlowTest(failed)">
+    <classes>
+      <class name="jewelry.com.NecklacesFlow">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="tearDown"/>
+          <include name="closeUrl"/>
+          <include name="jewelryEarRingFlow"/>
+        </methods>
+      </class> <!-- jewelry.com.NecklacesFlow -->
+    </classes>
+  </test> <!-- jewelryNecklacesFlowTest(failed) -->
+</suite> <!-- Failed suite [FDTestSuite] -->

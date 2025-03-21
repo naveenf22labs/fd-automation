@@ -3,6 +3,7 @@ package pageobjects.com;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -22,8 +23,8 @@ public class FDPageObjectData
     public By searchDiamondsOption = By.xpath("//span[text()='SEARCH DIAMONDS']");
     public By reamazeWidgetIcon = By.id("reamaze-widget-icon");
     public By closePopUpButton = By.className("klaviyo-close-form");
-    public By diamondRow = By.name("diamond-row-271100360FD"); //start with a flow diamond
-    public By diamondRowForSetting=By.name("diamond-row-89571-LGFD");// Start with a setting flow
+    public By diamondRow = By.xpath("(//div[starts-with(@name, 'diamond-row')])[1]"); //start with a flow diamond
+    public By diamondRowForSetting=By.xpath("(//div[starts-with(@name, 'diamond-row')])[1]");// Start with a setting flow
     public By selectThisStoneButton = By.xpath("(//button[text()='Select this stone'])[1]");
     public By searchSettingButton = By.xpath("//button[@type='button' and @variant='primary']");
     public By harperRingLink = By.xpath("//a[text()='The Harper ']");
@@ -66,10 +67,83 @@ public class FDPageObjectData
     
         
     private By  addDiamondToNecklaceButtonXpath= By.xpath("(//button[text()='Add diamond to necklace'])[1]");
+    private By tennisNecklaceXpath=By.xpath("(//span[text()='Tennis Bracelets'])[1]");
+    private By giftGuideXpath=By.xpath("//span[text()='Gift Guide']");
+    private By  giftGuidePlp=By.xpath("(//button[@value='Continue'])[2]");
     
+    //Cart                  
+    private By  closeCartXpath= By.xpath("//button[@aria-label='Close cart']");
     
-    
+    private By globalPlp=By.id("engagement-rings-1");
+  //  private By cartProduct1Removal=By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])[1]");
+   // private By cartProduct2Removal=By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])[2]");
+ /*
+    private By cartProductRemoval(int index) 
+    {
+        return By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])[" + index + "]");
+    }
 
+    public void removeProductFromCart(int index) 
+    {
+        driver.findElement(cartProductRemoval(index)).click();
+    }
+
+   */
+    //----------
+
+    private By cartProductRemoval(int index) {
+        return By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])[" + index + "]");
+    }
+
+
+
+    // Method to scroll the page to the top
+    public void scrollToTop() {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        // Scroll the page to the top using JavaScript
+        jsExecutor.executeScript("window.scrollTo(0, -800);");
+    }
+
+    // Method to remove a product from the cart using JavaScript to click
+    public void removeProductFromCart(int index) {
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+        // Get the element for the product removal button
+        By productRemovalElement = cartProductRemoval(index);
+
+        // Wait until the element is clickable
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(productRemovalElement));
+
+        // Scroll the page to the top before interacting with the element
+        scrollToTop();
+
+        // Optional: wait a bit for smooth scrolling (adjust if needed)
+        try {
+            Thread.sleep(1000); // You can remove or adjust the sleep time based on your needs
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        // Use JavaScript to trigger the click event
+        jsExecutor.executeScript("arguments[0].dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))", element);
+
+        // Wait for the cart to update after the removal
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(productRemovalElement)); // Wait until the element is no longer visible
+    }
+
+    // Example method to loop through indices and remove products
+    public void removeMultipleProductsFromCart(int totalProducts) {
+        // Start from index 1 and remove products until the cart is empty or the specified number of products are removed
+        for (int i = 1; i <= totalProducts; i++) {
+            try {
+                removeProductFromCart(i); // This will call the removeProductFromCart method with different indices
+                Thread.sleep(2000); // Optional: wait for the cart to update (you can adjust the wait time)
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }   //---------
     public FDPageObjectData(ChromeDriver driver) {
         this.driver = driver;
     }
@@ -252,5 +326,43 @@ public class FDPageObjectData
     public void addDiamondToNecklaceButton()
     {
     	driver.findElement(addDiamondToNecklaceButtonXpath).click();
+    }
+    
+    public void selectTennisNecklace()
+    {
+    	driver.findElement(tennisNecklaceXpath).click();
+    }
+    
+    public void giftGuide() 
+    {
+    	driver.findElement(giftGuideXpath).click();
+    	
+    }
+    public void selectGiftGuidePlp() 
+    {
+    driver.findElement(giftGuidePlp).click();	
+    }
+
+    
+    public void closeCart() throws InterruptedException
+    {
+
+    	  // Create WebDriverWait to wait for the element to become visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+        // Locate the element
+        WebElement cart = wait.until(ExpectedConditions.visibilityOfElementLocated(closeCartXpath));
+
+        // Scroll the element into view
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", cart);
+
+        // Use JavascriptExecutor to click the element directly
+        js.executeScript("arguments[0].click();", cart);
+    	//driver.findElement(closeCartXpath).click();
+    }
+    public void globalPLPRing()
+    {
+    	driver.findElement(globalPlp).click();
     }
 }

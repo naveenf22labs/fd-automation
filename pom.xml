@@ -22,7 +22,11 @@
     <artifactId>selenium-java</artifactId>
     <version>4.28.1</version>
 </dependency>
-
+<dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.13</version>
+    </dependency>
 
         <!-- TestNG Dependency for TestNG Framework -->
         <dependency>

@@ -10,12 +10,15 @@ public class StackingRings extends FDUtils
 {
 
 	@Test
-	public void stackinRingsFlow() throws InterruptedException
+	public void stackingRingsFlow() throws InterruptedException
 	{
     	FDPageObjectData stacking= new FDPageObjectData((ChromeDriver) driver);
     	
     	stacking.clickWeddingLink();
     	stacking.stackingRings();
+    	stacking.closePopUp();
+    	stacking.doubleClickReamazeWidget();
+
     	stacking.stackingRingsplp();
     	stacking.addToCartButton();
     	stacking.proceedToCheckout();
