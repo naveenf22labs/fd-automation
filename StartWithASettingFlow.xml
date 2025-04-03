@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite">
+    
+
+        <test name="WeddingAnniversaryFlowTest">
+        <classes>
+          
+            <class name="weddings.library.com.AnniversaryRings" />
+        </classes>
+    </test>
+    
+
+    
+</suite>

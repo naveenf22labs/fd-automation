@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite">
+    <test name="EngagementDiamondFlowTest">
+        <classes>
+           
+            <class name="library.com.EngagementDiamondFlow" />
+        </classes>
+    </test>
+
+    <test name="EngagementSettingFlowTest">
+        <classes>
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+    
+        <test name="WeddingAnniversaryFlowTest">
+        <classes>
+          
+            <class name="weddings.library.com.AnniversaryRings" />
+        </classes>
+    </test>
+
+    <test name="WeddingDiamondsBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.DiamondBands" />
+        </classes>
+    </test>
+  <test name="WeddingEternityBandsFlowTest">
+        <classes>
+          
+            <class name="weddings.library.com.EternityBand" />
+        </classes>
+    </test>
+
+    <test name="WeddingGoldBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.GoldBands" />
+        </classes>
+    </test> 
+    
+    <test name="MenWeddingBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.MenWeddingBands" />
+        </classes>
+    </test>
+
+    <test name="WeddingStackRingsFlowTest">
+        <classes>
+            <class name="weddings.library.com.StackingRings" />
+        </classes>
+    </test>
+
+    <test name="jewelryEarRingsFlowTest">
+        <classes>
+           
+            <class name="jewelry.com.EarRings" />
+        </classes>
+    </test>
+
+    <test name="jewelryNecklacesFlowTest">
+        <classes>
+            <class name="jewelry.com.NecklacesFlow" />
+        </classes>
+    </test>
+   
+    <test name="jewelryTennisBraceletsFlowTest">
+        <classes>
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+        <test name="jewelryGiftGuideFlowTest">
+        <classes>
+            <class name="jewelry.com.GiftGuide" />
+        </classes>
+    </test>
+
+   
+</suite>
