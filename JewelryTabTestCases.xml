@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FDTestSuite" description="FrankDarling Regression Test cases">
+        <test name="jewelryGiftGuideFlowTest">
+        <classes>
+            <class name="jewelry.com.GiftGuide" />
+        </classes>
+    </test>
+    
+    <test name="jewelryEarRingsFlowTest">
+        <classes>
+           
+            <class name="jewelry.com.EarRings" />
+        </classes>
+    </test>
+    
+     <test name="jewelryNecklacesFlowTest">
+        <classes>
+            <class name="jewelry.com.NecklacesFlow" />
+        </classes>
+    </test>
+   
+    <test name="jewelryTennisBraceletsFlowTest">
+        <classes>
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+    
+    
+</suite>

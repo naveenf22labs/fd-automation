@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FrankDarling-Master Suite">
+
+    <!-- Diamond Tests (Engagement Diamond + Setting) -->
+    <test name="DiamondFlowTests">
+        <groups>
+            <run>
+                <include name="diamond"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="library.com.EngagementDiamondFlow" />
+            <class name="library.com.EngagementSettingFlow" />
+        </classes>
+    </test>
+
+    <!-- Jewelry Tests (Necklaces and Tennis Bracelets) -->
+    <test name="JewelryFlowTests">
+        <groups>
+            <run>
+                <include name="jewelry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="jewelry.com.GiftGuide" />
+            <class name="jewelry.com.EarRings" />
+            <class name="jewelry.com.NecklacesFlow" />
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+     <test name="Wedding Navbar Flow Testcases">
+        <groups>
+            <run>
+                <include name="Wedding"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="weddings.library.com.MenWeddingBands" />
+            <class name="weddings.library.com.AnniversaryRings" />
+            <class name="weddings.library.com.StackingRings" />
+            <class name="weddings.library.com.DiamondBands" />
+            <class name="weddings.library.com.EternityBand" />
+            <class name="weddings.library.com.GoldBands" />
+        </classes>
+    </test>
+    <test name="Cart-Checkout Related Testcases">
+        <groups>
+            <run>
+                <include name="CartCheckoutTestCases"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="cartCheckout.MultipleDefaultDiamondsToCart" />
+            <class name="cartCheckout.MultipleProductsToCheckout" />
+            <class name="cartCheckout.RemovingJewelryProducts" />
+            <class name="cartCheckout.RemovingWeddingProducts"/>
+            <class name="cartCheckout.RemovingJewelryWeddingProducts" />
+            <class name="cartCheckout.SettingsJewelryWeddingItems" />
+            <class name="cartCheckout.SWADJewelry" />
+            <class name="cartCheckout.DiamondsCombinationToCart" />
+
+        </classes>
+    </test>
+
+</suite>

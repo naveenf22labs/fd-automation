@@ -2,35 +2,34 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T19:59:07 IST" name="Default suite" finished-at="2025-04-02T19:59:41 IST" duration-ms="33844">
+  <suite started-at="2025-04-10T14:55:44 IST" name="Default suite" finished-at="2025-04-10T14:56:12 IST" duration-ms="28538">
     <groups>
+      <group name="jewelry">
+        <method signature="EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68]" name="jewelryEarRingFlow" class="jewelry.com.EarRings"/>
+      </group> <!-- jewelry -->
     </groups>
-    <test started-at="2025-04-02T19:59:07 IST" name="Default test" finished-at="2025-04-02T19:59:41 IST" duration-ms="33844">
-      <class name="cartCheckout.SettingsJewelryWeddingItems">
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@765d7657]" started-at="2025-04-02T19:59:07 IST" name="launchUrl" finished-at="2025-04-02T19:59:11 IST" duration-ms="3987" status="PASS">
+    <test started-at="2025-04-10T14:55:44 IST" name="Default test" finished-at="2025-04-10T14:56:12 IST" duration-ms="28538">
+      <class name="jewelry.com.EarRings">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:55:44 IST" name="launchUrl" finished-at="2025-04-10T14:55:48 IST" duration-ms="3914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@765d7657]" started-at="2025-04-02T19:59:11 IST" name="cancelProductsFromCart" finished-at="2025-04-02T19:59:40 IST" duration-ms="29538" status="PASS">
+        <test-method signature="jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:55:48 IST" name="jewelryEarRingFlow" description="Verifying the functionality of Earring. Selecting the studd, adding to the cart and completing checkout flow." finished-at="2025-04-10T14:56:12 IST" duration-ms="24360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cancelProductsFromCart -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@765d7657]" started-at="2025-04-02T19:59:40 IST" name="tearDown" finished-at="2025-04-02T19:59:40 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- jewelryEarRingFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:56:12 IST" name="tearDownAndClose" finished-at="2025-04-10T14:56:12 IST" duration-ms="229" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=cancelProductsFromCart status=SUCCESS method=SettingsJewelryWeddingItems.cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@765d7657] output={null}]]]>
+                <![CDATA[[TestResult name=jewelryEarRingFlow status=SUCCESS method=EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="closeUrl()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@765d7657]" started-at="2025-04-02T19:59:40 IST" name="closeUrl" finished-at="2025-04-02T19:59:41 IST" duration-ms="277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeUrl -->
-      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- jewelry.com.EarRings -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

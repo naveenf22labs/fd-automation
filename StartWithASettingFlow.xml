@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="FDTestSuite">
-    
+<suite name="FDTestSuite" description="FrankDarling Regression Test cases">
 
-        <test name="WeddingAnniversaryFlowTest">
+    <!-- Diamond Tests (Engagement Diamond + Setting) -->
+    <test name="DiamondTests">
+        <groups>
+            <run>
+                <include name="diamond"/>
+            </run>
+        </groups>
         <classes>
-          
-            <class name="weddings.library.com.AnniversaryRings" />
+            <class name="library.com.EngagementDiamondFlow" />
+            <class name="library.com.EngagementSettingFlow" />
         </classes>
     </test>
-    
 
-    
+    <!-- Jewelry Tests (Necklaces and Tennis Bracelets) -->
+    <test name="JewelryFlowTests">
+        <groups>
+            <run>
+                <include name="jewelry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="jewelry.com.NecklacesFlow" />
+            <class name="jewelry.com.TennisBraceletsFlow" />
+        </classes>
+    </test>
+
 </suite>

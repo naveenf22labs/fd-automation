@@ -7,17 +7,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
+
 
 public class FDUtils
 {
 	
 	public static WebDriver driver;
 
-	@BeforeTest
+	@BeforeMethod(alwaysRun = true)
 	public void launchUrl()
 	{
+		//System.out.println(" Launching browser in @BeforeMethod");
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
 		
@@ -26,26 +27,38 @@ public class FDUtils
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get("https://frankdarling.com");
+		// System.out.println("Driver initialized: " + driver);
 	}
 	
-	
-	 @AfterMethod
-	    public void tearDown(ITestResult result) {
-	        if (ITestResult.FAILURE == result.getStatus()) {
-	            // Capture screenshot on failure
-	            ScreenshotUtil.captureScreenshot(driver, result.getName());
-	        }
+	@AfterMethod(alwaysRun=true)
+	public void tearDownAndClose(ITestResult result) {
+	    if (ITestResult.FAILURE == result.getStatus()) {
+	        ScreenshotUtil.captureScreenshot(driver, result.getName());
 	    }
-	@AfterTest
-	public void closeUrl()
-	{
-		 if(driver != null) {
-	            driver.quit();  // Close the browser after all tests are executed
-	        }
+	    if (driver != null) {
+	        driver.quit();
+	    }
 	}
+
+	
+	
+//	 @AfterMethod
+//	    public void tearDown(ITestResult result) {
+//	        if (ITestResult.FAILURE == result.getStatus()) {
+//	            // Capture screenshot on failure
+//	            ScreenshotUtil.captureScreenshot(driver, result.getName());
+//	        }
+//	    }
+//	@AfterMethod
+//	public void closeUrl()
+//	{
+//		 if(driver != null) {
+//	            driver.quit();  // Close the browser after all tests are executed
+//	        }
+//	}
 	
 	
 }

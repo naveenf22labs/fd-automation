@@ -1,6 +1,5 @@
 package jewelry.com;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -8,15 +7,16 @@ import utils.com.FDUtils;
 
 public class EarRings extends FDUtils
 {
-	@Test
+    @Test(groups = "jewelry", description = "Verifying the functionality of Earring. Selecting the studd, adding to the cart and completing checkout flow.")
     public void jewelryEarRingFlow() throws InterruptedException
     {
-    	FDPageObjectData earRings= new FDPageObjectData((ChromeDriver) driver);
+    	FDPageObjectData earRings= new FDPageObjectData(driver);
     	
     	earRings.jewelryNav();
     	earRings.earRingsOption();
     	earRings.closePopUp();
-    	earRings.jewleryPlp();
+    	//earRings.jewleryPlp();
+    	earRings.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
     	earRings.doubleClickReamazeWidget();
     	earRings.addToCartButton();
     	earRings.proceedToCheckout();

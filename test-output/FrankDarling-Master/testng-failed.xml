@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FrankDarling-Master]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="JewelryFlowTests(failed)">
+    <groups>
+      <run>
+        <include name="jewelry"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="jewelry.com.TennisBraceletsFlow">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="tearDownAndClose"/>
+          <include name="tennisBracelets"/>
+        </methods>
+      </class> <!-- jewelry.com.TennisBraceletsFlow -->
+    </classes>
+  </test> <!-- JewelryFlowTests(failed) -->
+  <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
+    <groups>
+      <run>
+        <include name="Wedding"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="weddings.library.com.MenWeddingBands">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="menWeddingBands"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- weddings.library.com.MenWeddingBands -->
+    </classes>
+  </test> <!-- Wedding Navbar Flow Testcases(failed) -->
+  <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
+    <groups>
+      <run>
+        <include name="CartCheckoutTestCases"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="cartCheckout.MultipleDefaultDiamondsToCart">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="defaultDiamondCombinations"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
+      <class name="cartCheckout.SettingsJewelryWeddingItems">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="cancelProductsFromCart"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
+    </classes>
+  </test> <!-- Cart-Checkout Related Testcases(failed) -->
+</suite> <!-- Failed suite [FrankDarling-Master] -->

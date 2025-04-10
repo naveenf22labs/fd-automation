@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
@@ -14,10 +13,10 @@ import utils.com.FDUtils;
 public class LocationDropdown extends FDUtils
 
 {
-	@Test
+	@Test(description=" Verifying all combinations of booking appointments and location dropdown selections.")
 	public void bookingAppointments() throws InterruptedException
 	{
-		  FDPageObjectData dropdown= new FDPageObjectData((ChromeDriver) driver);
+		  FDPageObjectData dropdown= new FDPageObjectData(driver);
 		  
 		  dropdown.showrooms();
 		  dropdown.virtualAppointments();
@@ -49,8 +48,7 @@ public class LocationDropdown extends FDUtils
 
 			          // Click on "Select Date" button after each combination
 			          driver.findElement(By.xpath("(//button[text()='Select Date'])[1]")).click();
-			          Thread.sleep(8000);
-			        
+			          Thread.sleep(4000);
 			          driver.findElement(By.xpath("//button[@class='calendly-popup-close']")).click();
 			          count++;
 			          if (count == 22) {
@@ -62,7 +60,8 @@ public class LocationDropdown extends FDUtils
 		    	  
 		      }
 		      // If the counter reaches 22, break out of the outer loop as well
-		      if (count == 22) {
+		      if (count == 22) 
+		      {
 		          break; // Exit the outer loop
 		      }
 		     

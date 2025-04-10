@@ -1,6 +1,5 @@
 package library.com;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -11,10 +10,10 @@ public class EngagementSettingFlow extends FDUtils
 {
 
 	
-	      @Test  
+    @Test( groups = "diamond", description = "Tested the flow of selecting a Setting. Select the setting, adding diamond, adding to the cart, and completing the checkout flow.")  
 	     public void startWithASetting( ) throws InterruptedException
 	     {
-		  FDPageObjectData engagementPage= new FDPageObjectData((ChromeDriver) driver); 
+		  FDPageObjectData engagementPage= new FDPageObjectData(driver); 
 	         engagementPage.clickEngagementLink();
 	    	 engagementPage.startWithSetting();
 	         engagementPage.selectHarperRing();

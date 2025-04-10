@@ -1,6 +1,5 @@
 package cartCheckout;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -11,12 +10,12 @@ public class SWADJewelry extends FDUtils
 	
 	
 
-	@Test
+    @Test(groups="CartCheckoutTestCases", description ="Removing the added products from the cart i.e., Diamond-Setting flow,Jewelry products, Anniversary ring.")
 	//Start with a diamond along with jewelry product i.e, earings, wedding flow.
-	public void scenario1() throws InterruptedException
+	public void removingProductsfromCart() throws InterruptedException
 	{
 		
-		 FDPageObjectData  cart1= new FDPageObjectData((ChromeDriver) driver);
+		 FDPageObjectData  cart1= new FDPageObjectData(driver);
 
         cart1.clickEngagementLink();
         cart1.startWithDiamond();
@@ -48,7 +47,8 @@ public class SWADJewelry extends FDUtils
     	cart1.addToCartButton();
         Thread.sleep(3000);
     	cart1.cartFocusUp();
-    	cart1.removeProductFromCart(1);
+    	cart1.removeAllProductsFromCart();
+    //	cart1.removeProductFromCart(1);
     	
     	
         

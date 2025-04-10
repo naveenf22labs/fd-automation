@@ -6,8 +6,8 @@ import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,14 +16,15 @@ import org.testng.Assert;
 public class FDPageObjectData
 {
 
-    public ChromeDriver driver;
+    public WebDriver driver;
     
     public By engagementLink = By.xpath("//span[text()='Engagement']");
     
     public By startWithDiamondOption = By.xpath("//span[text()='Start with a diamond']");
     
     public By startWithSettingOption = By.xpath("//span[text()='Start with a setting']");
-
+    private By defaultDiamondXpath = By.xpath("//div[text()='Continue with the default diamond stone']");
+ 
     public By searchDiamondsOption = By.xpath("//span[text()='SEARCH DIAMONDS']");
     public By reamazeWidgetIcon = By.id("reamaze-widget-icon");
     public By closePopUpButton = By.className("klaviyo-close-form");
@@ -62,7 +63,7 @@ public class FDPageObjectData
     private By jewelryXpath=By.xpath("//span[text()='Jewelry']");
     private By earRingsXpath=By.xpath("//span[text()='Earrings']");
     
-    private By earRingsPlp=By.xpath("(//div[starts-with(@id, 'engagement-rings')])[1]");
+    private By earRingsPlp=By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]");
     
     private By necklesXpath=By.xpath("//span[text()='Necklaces']");
     private By necklaceButtonXpath=By.xpath("(//button[text()='Select this necklace'])[2]");
@@ -99,7 +100,30 @@ public class FDPageObjectData
     {
         return By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])[" + index + "]");
     }
+// New Removal code
+    private By allCartRemoveIcons=By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])");
+    public void removeAllProductsFromCart() {
+        int removedCount = 0;
+        List<WebElement> removeIcons = driver.findElements(allCartRemoveIcons);
 
+        while (!removeIcons.isEmpty()) {
+            try {
+                removeIcons.get(0).click();
+                removedCount++;
+                Thread.sleep(1000);
+                removeIcons = driver.findElements(allCartRemoveIcons);
+            } catch (Exception e) {
+                System.out.println("Error after removing " + removedCount + " items: " + e.getMessage());
+                break;
+            }
+        }
+
+        System.out.println("Total products removed from cart: " + removedCount);
+    }
+
+    
+    //New Removal code
+    
    public void removeProductFromCart(int index) throws InterruptedException 
     {
     	for (int i=1; i<=3;  i++)
@@ -111,11 +135,16 @@ public class FDPageObjectData
               
     }
   
+  // public WebDriver driver;
+   public FDPageObjectData(WebDriver driver) {
+       this.driver = driver;
+   }
+
    
    
-    public FDPageObjectData(ChromeDriver driver) {
-        this.driver = driver;
-    }
+//    public FDPageObjectData(WebDriver driver) {
+//        this.driver = (ChromeDriver) driver;
+//    }
 
     public void clickEngagementLink() {
         driver.findElement(engagementLink).click();
@@ -168,6 +197,11 @@ public class FDPageObjectData
             //can use this method  to entire project bcz i developed with unique xpath
     public void searchSettingForThisDiamond() {
         driver.findElement(searchSettingButton).click();
+    }
+    
+    public void defaultDiamond()
+    {
+    	driver.findElement(defaultDiamondXpath).click();
     }
 
     public void selectHarperRing() {
@@ -356,18 +390,20 @@ public class FDPageObjectData
     
     // random product selection code for weddings
   //  private By productItems=By.xpath("//div[@id='ring-container']");
-  private By productItems=By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]");
+  public static  By weddingProductPLP=By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]");
+  
+  public static By jewelryProductsPLP = By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]");
   
 
       //Method to get the list of product items
-    public List<WebElement> getProductList() 
+    public List<WebElement> getProductList(By productLocator) 
     {
-     return driver.findElements(productItems);
+     return driver.findElements(productLocator);
      
     }
 
 //Method to scroll to the bottom of the page until all products are loaded
-  public void scrollToEndOfPage() throws InterruptedException
+  public void scrollToEndOfPage(By productLocator) throws InterruptedException
   {
    JavascriptExecutor js = (JavascriptExecutor) driver;
    long lastHeight = (long) js.executeScript("return document.body.scrollHeight");
@@ -380,7 +416,7 @@ public class FDPageObjectData
 
        // Wait for new products to load (Optional - depending on page behavior)
        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-       wait.until(ExpectedConditions.visibilityOfElementLocated(productItems)); // Ensure products are visible
+       wait.until(ExpectedConditions.visibilityOfElementLocated(productLocator)); // Ensure products are visible
 
        // Check if new products are loaded by comparing scroll height
        long newHeight = (long) js.executeScript("return document.body.scrollHeight");
@@ -393,24 +429,38 @@ public class FDPageObjectData
 }
 
       //Method to select a random product from the PLP
-      public WebElement selectRandomProduct()
+      public WebElement selectRandomProduct(By productLocator)
       {
-          List<WebElement> products = getProductList();
+          List<WebElement> products = getProductList(productLocator);
            Random rand = new Random();
            int randomIndex = rand.nextInt(products.size());
              return products.get(randomIndex);
      }
 
      //Method to click on a random product
-    public void clickRandomProduct() throws InterruptedException
+    public void clickRandomProduct(By productLocator) throws InterruptedException
     {
       // Scroll to the end of the page first
-       scrollToEndOfPage();
+       scrollToEndOfPage(productLocator);
 
        // Select and click a random product
-       WebElement randomProduct = selectRandomProduct();
+       WebElement randomProduct = selectRandomProduct(productLocator);
          randomProduct.click();
    }
+   
+
+//    public void clickRandomJewelryProduct() throws InterruptedException
+//    {
+//    	 scrollToEndOfPage();
+//        selectRandomProduct();
+//    }
+//
+//    public By weddingRingLocator = By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]");
+//
+//    public void clickRandomWeddingRing(By locator) throws InterruptedException {
+//        clickRandomProduct(weddingRingLocator);
+//    }
+
     //booking dropdowns
     private By appointmentsXpath=By.xpath("//span[text()='Showrooms']");
     
@@ -426,8 +476,7 @@ public class FDPageObjectData
     	
     }
     
-    // selecting random product from engagement plp
+    // selecting random dropdown elements for products in pdp.
     
-
   
 }

@@ -1,6 +1,5 @@
 package jewelry.com;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -8,10 +7,10 @@ import utils.com.FDUtils;
 
 public class GiftGuide extends FDUtils
 {
-	@Test
+    @Test(groups = "jewelry", description ="Tested the flow of Gift guide. Selecting the gift guide product, adding to cart, and completing checkout flow.")
 	public void giftGuideFlow() throws InterruptedException
 	{
-          FDPageObjectData gift= new FDPageObjectData((ChromeDriver) driver);
+          FDPageObjectData gift= new FDPageObjectData(driver);
     	
     	gift.jewelryNav();
     	gift.giftGuide();

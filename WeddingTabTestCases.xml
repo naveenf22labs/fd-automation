@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="FrankDarling-Wedding Tab Test cases">
+    
+    
+    <test name="MenWeddingBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.MenWeddingBands" />
+        </classes>
+    </test>
+        <test name="WeddingAnniversaryFlowTest">
+        <classes>
+          
+            <class name="weddings.library.com.AnniversaryRings" />
+        </classes>
+    </test>
+
+           <test name="WeddingStackRingsFlowTest">
+        <classes>
+            <class name="weddings.library.com.StackingRings" />
+        </classes>
+    </test>
+
+    <test name="WeddingDiamondsBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.DiamondBands" />
+        </classes>
+    </test>
+  <test name="WeddingEternityBandsFlowTest">
+        <classes>
+          
+            <class name="weddings.library.com.EternityBand" />
+        </classes>
+    </test>
+
+    <test name="WeddingGoldBandsFlowTest">
+        <classes>
+            <class name="weddings.library.com.GoldBands" />
+        </classes>
+    </test> 
+    
+</suite>

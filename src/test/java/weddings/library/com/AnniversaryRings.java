@@ -1,10 +1,5 @@
 package weddings.library.com;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -13,16 +8,16 @@ import utils.com.FDUtils;
 public class AnniversaryRings extends FDUtils
 
 {
- 
-	@Test
+    @Test(groups = "Wedding", description = "Tested the flow Anniversay Ring. Selecting the anniversary Ring, adding to the cart, and completing the checkout flow.")
 	public void anniversaryRingFlow() throws InterruptedException
 	{
-    	FDPageObjectData anniversary= new FDPageObjectData((ChromeDriver) driver);
+    	FDPageObjectData anniversary= new FDPageObjectData(driver);
     	
     	anniversary.clickWeddingLink();
     	anniversary.selectAnniversaryOption();
+    	anniversary.closePopUp();
     	//anniversary.scrollToEndOfPage();
-    	anniversary.clickRandomProduct();
+    	anniversary.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	//anniversary.selectAnniversaryPlp();
     	anniversary.doubleClickReamazeWidget();
     	anniversary.addToCartButton();

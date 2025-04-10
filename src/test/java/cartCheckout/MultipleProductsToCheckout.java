@@ -1,6 +1,5 @@
 package cartCheckout;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -9,11 +8,11 @@ import utils.com.FDUtils;
 public class MultipleProductsToCheckout extends FDUtils
 
 {
-	@Test
-	public void multipleProducts() throws InterruptedException
+    @Test(groups="CartCheckoutTestCases", description ="Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow.")
+	public void addingMultipleProductsToCheckout() throws InterruptedException
 	{
 		
-		 FDPageObjectData  cart1= new FDPageObjectData((ChromeDriver) driver);
+		 FDPageObjectData  cart1= new FDPageObjectData(driver);
 
         cart1.clickEngagementLink();
         cart1.startWithDiamond();
@@ -25,26 +24,24 @@ public class MultipleProductsToCheckout extends FDUtils
         cart1.searchSettingForThisDiamond();
         cart1.selectHarperRing();
         cart1.addSettingToStone();
-     Thread.sleep(3000);
+         Thread.sleep(3000);
      //Adding jewelry product
         cart1.jewelryNav();
     	cart1.earRingsOption();
     	cart1.jewleryPlp();
     	cart1.addToCartButton();
-         // Adding wedding product
-        cart1.clickWeddingLink();
+         // Adding wedding products i.e., Anniversary and Gold bands.
+    	cart1.clickWeddingLink();
     	cart1.selectAnniversaryOption();
-    	cart1.selectAnniversaryPlp();
+    	cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+    	cart1.addToCartButton();
+    	// Adding Gold Band 
     	 cart1.clickWeddingLink();
 		  cart1.selectGoldBand();
-		  cart1.clickRandomProduct();
-	    //  cart1.selectDiamondBandProduct();
+		  cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	cart1.addToCartButton();
        cart1.proceedToCheckout();
        cart1.checkoutValidation();
-    	
-    	
-        
         	
 	}
 	

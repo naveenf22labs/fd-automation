@@ -73,6 +73,28 @@
             <class name="jewelry.com.GiftGuide" />
         </classes>
     </test>
+    
+     <test name="Multiple Default Diamonds Combination">
+        <classes>
+            <class name="cartCheckout.MultipleDefaultDiamondsToCart" />
+        </classes>
+    </test>
+     <test name="Adding Multiple combination of products to checkout">
+        <classes>
+            <class name="cartCheckout.MultipleProductsToCheckout" />
+        </classes>
+    </test>
+         <test name="Products removal from the cart1">
+        <classes>
+            <class name="cartCheckout.SettingsJewelryWeddingItems" />
+        </classes>
+       </test>
+  <test name="Products removal from the cart2">
+        <classes>
+            <class name="cartCheckout.SWADJewelry" />
+        </classes>
+       </test>
+
 
    
 </suite>

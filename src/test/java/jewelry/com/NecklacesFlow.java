@@ -1,6 +1,5 @@
 package jewelry.com;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import pageobjects.com.FDPageObjectData;
@@ -9,14 +8,15 @@ import utils.com.FDUtils;
 public class NecklacesFlow extends FDUtils {
 	
 	
-	@Test
+    @Test(groups = "jewelry", description = "Tested the flow of Necklace. Selecting the necklace, Adding diamond to the neckalce,then add to the cart and completing the checkout flow.")
 	 public void jewelryEarRingFlow() throws InterruptedException
 	    {
-	    	FDPageObjectData necklaces= new FDPageObjectData((ChromeDriver) driver);
+	    	FDPageObjectData necklaces= new FDPageObjectData(driver);
 	    	
 	    	necklaces.jewelryNav();
 	        necklaces.selectnecklesOption();
 	    	necklaces.closePopUp();
+	    	Thread.sleep(2000);
 	    	necklaces.jewleryPlp();
 	    	necklaces.doubleClickReamazeWidget();
 	    	necklaces.selectThisNecklaceButton();
