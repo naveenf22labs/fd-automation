@@ -14,7 +14,8 @@ public class SettingsJewelryWeddingItems  extends FDUtils
 
 	         cart.clickEngagementLink();
 	    	 cart.startWithSetting();
-	         cart.selectHarperRing();
+	    	 cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+	        // cart.selectHarperRing();
 	         cart.selectThisSetting();
 	         //reusing diamond button properties only  its mentioned diamond but it works for setting as well
 	         cart.searchSettingForThisDiamond(); 
@@ -22,6 +23,7 @@ public class SettingsJewelryWeddingItems  extends FDUtils
 	         cart.closePopUp();
 	         cart.doubleClickReamazeWidget();
 	         cart.selectDiamond2();
+	         cart.addStoneToSetting();
 	        // Thread.sleep(2000);
 	         cart.cartFocusUp();
 	         Thread.sleep(3000);

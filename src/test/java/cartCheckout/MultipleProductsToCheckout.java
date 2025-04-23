@@ -24,7 +24,7 @@ public class MultipleProductsToCheckout extends FDUtils
         cart1.searchSettingForThisDiamond();
         cart1.selectHarperRing();
         cart1.addSettingToStone();
-         Thread.sleep(3000);
+        // Thread.sleep(3000);
      //Adding jewelry product
         cart1.jewelryNav();
     	cart1.earRingsOption();
@@ -40,6 +40,7 @@ public class MultipleProductsToCheckout extends FDUtils
 		  cart1.selectGoldBand();
 		  cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	cart1.addToCartButton();
+    	 Thread.sleep(2000);
        cart1.proceedToCheckout();
        cart1.checkoutValidation();
         	

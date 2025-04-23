@@ -17,18 +17,21 @@ public class RemovingJewelryProducts extends FDUtils
 			cart.jewelryNav();
 	    	cart.earRingsOption();
 	    	cart.closePopUp();
-	    	cart.jewleryPlp();
+	    	cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+	    	//cart.jewleryPlp();
 	    	cart.doubleClickReamazeWidget();
 	    	cart.addToCartButton();
 	    	cart.jewelryNav();
 			cart.selectTennisNecklace();
-			cart.jewleryPlp();
+			cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+			//cart.jewleryPlp();
 			cart.addToCartButton();
 			//adding Necklace+diamond combo
 			cart.jewelryNav();
 	        cart.selectnecklesOption();
 	        Thread.sleep(2000);
-	    	cart.jewleryPlp();
+	        cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+	    	//cart.jewleryPlp();
 	    	cart.selectThisNecklaceButton();
 	    	// using diamond flow method only bcz we created unique xpath for reusability.
 	    	cart.searchSettingForThisDiamond();

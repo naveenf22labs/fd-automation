@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cart-Checkout Related Testcases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/4</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 10 11:13:58 IST 2025</td>
+<td>Started on:</td><td>Wed Apr 23 10:54:07 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>367 seconds (367940 ms)</td>
+<tr><td>Total time:</td><td>418 seconds (418070 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>CartCheckoutTestCases </td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout()'><b>addingMultipleProductsToCheckout</b><br>Test class: cartCheckout.MultipleProductsToCheckout<br>Test method: Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow.</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cursor-pointer&quot;&gt;...&lt;/span&gt; is not clickable at point (575, 96). Other element would receive the click: &lt;div class=&quot;w-full h-12 bg-white px-6 text-s hidden lg:flex justify-between items-center border-b border-theme-blue relative&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.42)
+<td title='cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart()'><b>cancelProductsFromCart</b><br>Test class: cartCheckout.SettingsJewelryWeddingItems<br>Test method: Removing the added products from the cart i.e., setting-Diamond flow,Jewelry products, Anniversary ring.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[text()=&apos;Select this setting&apos;])[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [618ab7d947d805419d76993eca0bccdb, clickElement {id=f.0AC2CEB434CEB6AFD7600FCAEDF8A77D.d.8B82F01FA21A46A4B37783D531DB222F.e.393}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53031/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (618ab7d947d805419d76993eca0bccdb)] -&gt; xpath: //span[text()=&apos;Wedding&apos;]]
-Session ID: 618ab7d947d805419d76993eca0bccdb
+Command: [73333ece136185ef9ea83a82040c31bd, findElement {using=xpath, value=(//button[text()=&apos;Select this setting&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62169/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73333ece136185ef9ea83a82040c31bd
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -93,21 +93,23 @@ Session ID: 618ab7d947d805419d76993eca0bccdb
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageobjects.com.FDPageObjectData.clickWeddingLink(FDPageObjectData.java:250)
-	at cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout(MultipleProductsToCheckout.java:37)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageobjects.com.FDPageObjectData.selectThisSetting(FDPageObjectData.java:195)
+	at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254513404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace254513404'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cursor-pointer&quot;&gt;...&lt;/span&gt; is not clickable at point (575, 96). Other element would receive the click: &lt;div class=&quot;w-full h-12 bg-white px-6 text-s hidden lg:flex justify-between items-center border-b border-theme-blue relative&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.42)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1273093350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1273093350'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[text()=&apos;Select this setting&apos;])[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [618ab7d947d805419d76993eca0bccdb, clickElement {id=f.0AC2CEB434CEB6AFD7600FCAEDF8A77D.d.8B82F01FA21A46A4B37783D531DB222F.e.393}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53031}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53031/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (618ab7d947d805419d76993eca0bccdb)] -&gt; xpath: //span[text()=&apos;Wedding&apos;]]
-Session ID: 618ab7d947d805419d76993eca0bccdb
+Command: [73333ece136185ef9ea83a82040c31bd, findElement {using=xpath, value=(//button[text()=&apos;Select this setting&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62169/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73333ece136185ef9ea83a82040c31bd
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -118,16 +120,18 @@ Session ID: 618ab7d947d805419d76993eca0bccdb
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageobjects.com.FDPageObjectData.clickWeddingLink(FDPageObjectData.java:250)
-	at cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout(MultipleProductsToCheckout.java:37)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageobjects.com.FDPageObjectData.selectThisSetting(FDPageObjectData.java:195)
+	at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:19)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -149,19 +153,19 @@ Session ID: 618ab7d947d805419d76993eca0bccdb
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>23</td>
-<td>cartCheckout.MultipleProductsToCheckout@4c178a76</td></tr>
+<td>15</td>
+<td>cartCheckout.SettingsJewelryWeddingItems@544fa968</td></tr>
 <tr>
 <td title='cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations()'><b>defaultDiamondCombinations</b><br>Test class: cartCheckout.MultipleDefaultDiamondsToCart<br>Test method: Verifying the functionality of adding the multiple default diamonds to the cart and completing the checkout flow.</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cursor-pointer&quot;&gt;...&lt;/span&gt; is not clickable at point (489, 63). Other element would receive the click: &lt;div class=&quot;fixed bottom-0 left-0 right-0 inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.42)
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1546, 657)
+  (Session info: chrome=135.0.7049.96)
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5d076887c0a8fa3034b43bed0b64827, clickElement {id=f.90BDF68194BCAB39357E8606D260F683.d.9CD7C7139B3173ACFBE1D8F35948C35F.e.215}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52946/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b5d076887c0a8fa3034b43bed0b64827)] -&gt; xpath: //span[text()=&apos;Engagement&apos;]]
-Session ID: b5d076887c0a8fa3034b43bed0b64827
+Command: [3d5f4f3a14eb7da685a41c3d8a66e388, clickElement {id=f.3B9E56C1ECBAF366DE7569369BEB1F8D.d.6D2659B43343F01AFCCF32B597A61803.e.289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61275/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3d5f4f3a14eb7da685a41c3d8a66e388)] -&gt; xpath: //button[text()=&apos;Checkout&apos;]]
+Session ID: 3d5f4f3a14eb7da685a41c3d8a66e388
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -171,19 +175,19 @@ Session ID: b5d076887c0a8fa3034b43bed0b64827
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageobjects.com.FDPageObjectData.clickEngagementLink(FDPageObjectData.java:150)
-	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:22)
+	at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace874548138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace874548138'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;cursor-pointer&quot;&gt;...&lt;/span&gt; is not clickable at point (489, 63). Other element would receive the click: &lt;div class=&quot;fixed bottom-0 left-0 right-0 inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=135.0.7049.42)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1997028929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1997028929'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1546, 657)
+  (Session info: chrome=135.0.7049.96)
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b5d076887c0a8fa3034b43bed0b64827, clickElement {id=f.90BDF68194BCAB39357E8606D260F683.d.9CD7C7139B3173ACFBE1D8F35948C35F.e.215}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52946/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b5d076887c0a8fa3034b43bed0b64827)] -&gt; xpath: //span[text()=&apos;Engagement&apos;]]
-Session ID: b5d076887c0a8fa3034b43bed0b64827
+Command: [3d5f4f3a14eb7da685a41c3d8a66e388, clickElement {id=f.3B9E56C1ECBAF366DE7569369BEB1F8D.d.6D2659B43343F01AFCCF32B597A61803.e.289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61275/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3d5f4f3a14eb7da685a41c3d8a66e388)] -&gt; xpath: //button[text()=&apos;Checkout&apos;]]
+Session ID: 3d5f4f3a14eb7da685a41c3d8a66e388
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -196,14 +200,14 @@ Session ID: b5d076887c0a8fa3034b43bed0b64827
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pageobjects.com.FDPageObjectData.clickEngagementLink(FDPageObjectData.java:150)
-	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:22)
+	at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
@@ -225,8 +229,8 @@ Session ID: b5d076887c0a8fa3034b43bed0b64827
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>11</td>
-<td>cartCheckout.MultipleDefaultDiamondsToCart@b2c9a9c</td></tr>
+<td>22</td>
+<td>cartCheckout.MultipleDefaultDiamondsToCart@2362f559</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -237,35 +241,352 @@ Session ID: b5d076887c0a8fa3034b43bed0b64827
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart()'><b>removingJewelryProductsFromCart</b><br>Test class: cartCheckout.RemovingJewelryProducts<br>Test method: Verified removal of all jewelry products from the cart.</td>
+<td title='cartCheckout.DiamondsCombinationToCart.defaultDiamondAndNormalDiamonds()'><b>defaultDiamondAndNormalDiamonds</b><br>Test class: cartCheckout.DiamondsCombinationToCart<br>Test method: Removing added diamonds i.e, normal and default diamond from the cart.</td>
 <td></td>
-<td>43</td>
-<td>cartCheckout.RemovingJewelryProducts@fa4c865</td></tr>
-<tr>
-<td title='cartCheckout.RemovingJewelryWeddingProducts.RemovingTheProductsFromTheCart()'><b>RemovingTheProductsFromTheCart</b><br>Test class: cartCheckout.RemovingJewelryWeddingProducts<br>Test method: Adding and removing the jewelry and wedding products from the cart.</td>
-<td></td>
-<td>62</td>
-<td>cartCheckout.RemovingJewelryWeddingProducts@544fa968</td></tr>
+<td>41</td>
+<td>cartCheckout.DiamondsCombinationToCart@d35dea7</td></tr>
 <tr>
 <td title='cartCheckout.SWADJewelry.removingProductsfromCart()'><b>removingProductsfromCart</b><br>Test class: cartCheckout.SWADJewelry<br>Test method: Removing the added products from the cart i.e., Diamond-Setting flow,Jewelry products, Anniversary ring.</td>
 <td></td>
-<td>40</td>
-<td>cartCheckout.SWADJewelry@d35dea7</td></tr>
+<td>36</td>
+<td>cartCheckout.SWADJewelry@247bddad</td></tr>
 <tr>
 <td title='cartCheckout.RemovingWeddingProducts.removingWeddingProductsFromCart()'><b>removingWeddingProductsFromCart</b><br>Test class: cartCheckout.RemovingWeddingProducts<br>Test method: verified Removal of wedding products from the cart</td>
 <td></td>
-<td>48</td>
-<td>cartCheckout.RemovingWeddingProducts@3bd82cf5</td></tr>
+<td>47</td>
+<td>cartCheckout.RemovingWeddingProducts@fa4c865</td></tr>
 <tr>
-<td title='cartCheckout.DiamondsCombinationToCart.defaultDiamondAndNormalDiamonds()'><b>defaultDiamondAndNormalDiamonds</b><br>Test class: cartCheckout.DiamondsCombinationToCart<br>Test method: Removing added diamonds i.e, normal and default diamond from the cart.</td>
+<td title='cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart()'><b>removingJewelryProductsFromCart</b><br>Test class: cartCheckout.RemovingJewelryProducts<br>Test method: Verified removal of all jewelry products from the cart.</td>
 <td></td>
-<td>36</td>
-<td>cartCheckout.DiamondsCombinationToCart@7770f470</td></tr>
+<td>50</td>
+<td>cartCheckout.RemovingJewelryProducts@4c178a76</td></tr>
+<tr>
+<td title='cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout()'><b>addingMultipleProductsToCheckout</b><br>Test class: cartCheckout.MultipleProductsToCheckout<br>Test method: Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow.</td>
+<td></td>
+<td>33</td>
+<td>cartCheckout.MultipleProductsToCheckout@b2c9a9c</td></tr>
+<tr>
+<td title='cartCheckout.RemovingJewelryWeddingProducts.RemovingTheProductsFromTheCart()'><b>RemovingTheProductsFromTheCart</b><br>Test class: cartCheckout.RemovingJewelryWeddingProducts<br>Test method: Adding and removing the jewelry and wedding products from the cart.</td>
+<td></td>
+<td>54</td>
+<td>cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart()'><b>cancelProductsFromCart</b><br>Test class: cartCheckout.SettingsJewelryWeddingItems<br>Test method: Removing the added products from the cart i.e., setting-Diamond flow,Jewelry products, Anniversary ring.</td>
-<td></td>
-<td>43</td>
-<td>cartCheckout.SettingsJewelryWeddingItems@247bddad</td></tr>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b&quot; id=&quot;engagement-rings-11&quot;&gt;...&lt;/div&gt; is not clickable at point (1344, 486). Other element would receive the click: &lt;iframe title=&quot;Re:amaze Chat&quot; allow=&quot;microphone; camera&quot; allowfullscreen=&quot;&quot; allowtransparency=&quot;true&quot; style=&quot;width: 100% !important; height: 100% !important; border: 0px; position: relative;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf192b91bbd4e457e411e9db5c6a7700, clickElement {id=f.7D2E339BB935FED7E9AE3265E255E433.d.FA0C0E07A3F77F5AD176AD317BDB80D1.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62085/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf192b91bbd4e457e411e9db5c6a7700)] -&gt; xpath: //div[contains(@class,&apos;w-vw-1/2 h&apos;) and contains(@id,&apos;engagement-rings&apos;)]]
+Session ID: cf192b91bbd4e457e411e9db5c6a7700
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+	at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1775829753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1775829753'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b&quot; id=&quot;engagement-rings-11&quot;&gt;...&lt;/div&gt; is not clickable at point (1344, 486). Other element would receive the click: &lt;iframe title=&quot;Re:amaze Chat&quot; allow=&quot;microphone; camera&quot; allowfullscreen=&quot;&quot; allowtransparency=&quot;true&quot; style=&quot;width: 100% !important; height: 100% !important; border: 0px; position: relative;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf192b91bbd4e457e411e9db5c6a7700, clickElement {id=f.7D2E339BB935FED7E9AE3265E255E433.d.FA0C0E07A3F77F5AD176AD317BDB80D1.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62085/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf192b91bbd4e457e411e9db5c6a7700)] -&gt; xpath: //div[contains(@class,&apos;w-vw-1/2 h&apos;) and contains(@id,&apos;engagement-rings&apos;)]]
+Session ID: cf192b91bbd4e457e411e9db5c6a7700
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+	at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>cartCheckout.SettingsJewelryWeddingItems@544fa968</td></tr>
+<tr>
+<td title='cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout()'><b>addingMultipleProductsToCheckout</b><br>Test class: cartCheckout.MultipleProductsToCheckout<br>Test method: Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow.</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[text()=&apos;Add to Cart&apos;])[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d00a2c8735c10a27d4f4fae81b27ca5, findElement {using=xpath, value=(//button[text()=&apos;Add to Cart&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d00a2c8735c10a27d4f4fae81b27ca5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageobjects.com.FDPageObjectData.addToCartButton(FDPageObjectData.java:265)
+	at cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout(MultipleProductsToCheckout.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149647258", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149647258'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//button[text()=&apos;Add to Cart&apos;])[2]&quot;}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d00a2c8735c10a27d4f4fae81b27ca5, findElement {using=xpath, value=(//button[text()=&apos;Add to Cart&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d00a2c8735c10a27d4f4fae81b27ca5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at pageobjects.com.FDPageObjectData.addToCartButton(FDPageObjectData.java:265)
+	at cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout(MultipleProductsToCheckout.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>26</td>
+<td>cartCheckout.MultipleProductsToCheckout@b2c9a9c</td></tr>
+<tr>
+<td title='cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations()'><b>defaultDiamondCombinations</b><br>Test class: cartCheckout.MultipleDefaultDiamondsToCart<br>Test method: Verifying the functionality of adding the multiple default diamonds to the cart and completing the checkout flow.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1544, 664)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecf5a0c44d7d877dcfb25f9eea1f4d02, clickElement {id=f.BFB2D5648ED1E7619D6D9AA61B406C51.d.E49FB40DA1E34DCA0BE425D43DB95044.e.295}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61168/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecf5a0c44d7d877dcfb25f9eea1f4d02)] -&gt; xpath: //button[text()=&apos;Checkout&apos;]]
+Session ID: ecf5a0c44d7d877dcfb25f9eea1f4d02
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652734453", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652734453'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1544, 664)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecf5a0c44d7d877dcfb25f9eea1f4d02, clickElement {id=f.BFB2D5648ED1E7619D6D9AA61B406C51.d.E49FB40DA1E34DCA0BE425D43DB95044.e.295}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61168/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecf5a0c44d7d877dcfb25f9eea1f4d02)] -&gt; xpath: //button[text()=&apos;Checkout&apos;]]
+Session ID: ecf5a0c44d7d877dcfb25f9eea1f4d02
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+	at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>18</td>
+<td>cartCheckout.MultipleDefaultDiamondsToCart@2362f559</td></tr>
+<tr>
+<td title='cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart()'><b>removingJewelryProductsFromCart</b><br>Test class: cartCheckout.RemovingJewelryProducts<br>Test method: Verified removal of all jewelry products from the cart.</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b&quot; id=&quot;engagement-rings-4&quot;&gt;...&lt;/div&gt; is not clickable at point (1344, 384). Other element would receive the click: &lt;iframe title=&quot;Re:amaze Chat&quot; allow=&quot;microphone; camera&quot; allowfullscreen=&quot;&quot; allowtransparency=&quot;true&quot; style=&quot;width: 100% !important; height: 100% !important; border: 0px; position: relative;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2265c97ab47b34b58c95d7072ce47092, clickElement {id=f.AB99F3DE816DE90735E5DC5EBC43D197.d.7E65450EB56E93C913EC2C69716FF576.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61664/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2265c97ab47b34b58c95d7072ce47092)] -&gt; xpath: //div[contains(@class,&apos;w-vw-1/2 h&apos;) and contains(@id,&apos;engagement-rings&apos;)]]
+Session ID: 2265c97ab47b34b58c95d7072ce47092
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+	at cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart(RemovingJewelryProducts.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace398802427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace398802427'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b&quot; id=&quot;engagement-rings-4&quot;&gt;...&lt;/div&gt; is not clickable at point (1344, 384). Other element would receive the click: &lt;iframe title=&quot;Re:amaze Chat&quot; allow=&quot;microphone; camera&quot; allowfullscreen=&quot;&quot; allowtransparency=&quot;true&quot; style=&quot;width: 100% !important; height: 100% !important; border: 0px; position: relative;&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=135.0.7049.96)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2265c97ab47b34b58c95d7072ce47092, clickElement {id=f.AB99F3DE816DE90735E5DC5EBC43D197.d.7E65450EB56E93C913EC2C69716FF576.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61664/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2265c97ab47b34b58c95d7072ce47092)] -&gt; xpath: //div[contains(@class,&apos;w-vw-1/2 h&apos;) and contains(@id,&apos;engagement-rings&apos;)]]
+Session ID: 2265c97ab47b34b58c95d7072ce47092
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+	at cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart(RemovingJewelryProducts.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>14</td>
+<td>cartCheckout.RemovingJewelryProducts@4c178a76</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,28 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="6" ignored="0" total="26" passed="17" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-10T14:55:44 IST" name="Default suite" finished-at="2025-04-10T14:56:12 IST" duration-ms="28538">
+  <suite started-at="2025-04-23T10:48:03 IST" name="FrankDarling-Master Suite" finished-at="2025-04-23T11:01:05 IST" duration-ms="782092">
     <groups>
       <group name="jewelry">
-        <method signature="EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68]" name="jewelryEarRingFlow" class="jewelry.com.EarRings"/>
+        <method signature="EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@489115ef]" name="jewelryEarRingFlow" class="jewelry.com.EarRings"/>
+        <method signature="GiftGuide.giftGuideFlow()[pri:0, instance:jewelry.com.GiftGuide@15de0b3c]" name="giftGuideFlow" class="jewelry.com.GiftGuide"/>
+        <method signature="NecklacesFlow.jewelryEarRingFlow()[pri:0, instance:jewelry.com.NecklacesFlow@3857f613]" name="jewelryEarRingFlow" class="jewelry.com.NecklacesFlow"/>
+        <method signature="TennisBraceletsFlow.tennisBracelets()[pri:0, instance:jewelry.com.TennisBraceletsFlow@198b6731]" name="tennisBracelets" class="jewelry.com.TennisBraceletsFlow"/>
       </group> <!-- jewelry -->
+      <group name="diamond">
+        <method signature="EngagementDiamondFlow.startWithADiamond()[pri:0, instance:library.com.EngagementDiamondFlow@3c19aaa5]" name="startWithADiamond" class="library.com.EngagementDiamondFlow"/>
+        <method signature="EngagementSettingFlow.startWithASetting()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" name="startWithASetting" class="library.com.EngagementSettingFlow"/>
+      </group> <!-- diamond -->
+      <group name="Wedding">
+        <method signature="AnniversaryRings.anniversaryRingFlow()[pri:0, instance:weddings.library.com.AnniversaryRings@ba2f4ec]" name="anniversaryRingFlow" class="weddings.library.com.AnniversaryRings"/>
+        <method signature="DiamondBands.diamondBandFlow()[pri:0, instance:weddings.library.com.DiamondBands@55fe41ea]" name="diamondBandFlow" class="weddings.library.com.DiamondBands"/>
+        <method signature="EternityBand.eternityBandFlow()[pri:0, instance:weddings.library.com.EternityBand@fbd1f6]" name="eternityBandFlow" class="weddings.library.com.EternityBand"/>
+        <method signature="GoldBands.goldBands()[pri:0, instance:weddings.library.com.GoldBands@1ce24091]" name="goldBands" class="weddings.library.com.GoldBands"/>
+        <method signature="MenWeddingBands.menWeddingBands()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" name="menWeddingBands" class="weddings.library.com.MenWeddingBands"/>
+        <method signature="StackingRings.stackingRingsFlow()[pri:0, instance:weddings.library.com.StackingRings@1c1bbc4e]" name="stackingRingsFlow" class="weddings.library.com.StackingRings"/>
+      </group> <!-- Wedding -->
+      <group name="CartCheckoutTestCases">
+        <method signature="DiamondsCombinationToCart.defaultDiamondAndNormalDiamonds()[pri:0, instance:cartCheckout.DiamondsCombinationToCart@d35dea7]" name="defaultDiamondAndNormalDiamonds" class="cartCheckout.DiamondsCombinationToCart"/>
+        <method signature="MultipleDefaultDiamondsToCart.defaultDiamondCombinations()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" name="defaultDiamondCombinations" class="cartCheckout.MultipleDefaultDiamondsToCart"/>
+        <method signature="MultipleProductsToCheckout.addingMultipleProductsToCheckout()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" name="addingMultipleProductsToCheckout" class="cartCheckout.MultipleProductsToCheckout"/>
+        <method signature="RemovingJewelryProducts.removingJewelryProductsFromCart()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" name="removingJewelryProductsFromCart" class="cartCheckout.RemovingJewelryProducts"/>
+        <method signature="RemovingJewelryWeddingProducts.RemovingTheProductsFromTheCart()[pri:0, instance:cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5]" name="RemovingTheProductsFromTheCart" class="cartCheckout.RemovingJewelryWeddingProducts"/>
+        <method signature="RemovingWeddingProducts.removingWeddingProductsFromCart()[pri:0, instance:cartCheckout.RemovingWeddingProducts@fa4c865]" name="removingWeddingProductsFromCart" class="cartCheckout.RemovingWeddingProducts"/>
+        <method signature="SWADJewelry.removingProductsfromCart()[pri:0, instance:cartCheckout.SWADJewelry@247bddad]" name="removingProductsfromCart" class="cartCheckout.SWADJewelry"/>
+        <method signature="SettingsJewelryWeddingItems.cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" name="cancelProductsFromCart" class="cartCheckout.SettingsJewelryWeddingItems"/>
+      </group> <!-- CartCheckoutTestCases -->
     </groups>
-    <test started-at="2025-04-10T14:55:44 IST" name="Default test" finished-at="2025-04-10T14:56:12 IST" duration-ms="28538">
-      <class name="jewelry.com.EarRings">
-        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:55:44 IST" name="launchUrl" finished-at="2025-04-10T14:55:48 IST" duration-ms="3914" status="PASS">
+    <test started-at="2025-04-23T10:48:03 IST" name="DiamondFlowTests" finished-at="2025-04-23T10:49:08 IST" duration-ms="64628">
+      <class name="library.com.EngagementDiamondFlow">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:library.com.EngagementDiamondFlow@3c19aaa5]" started-at="2025-04-23T10:48:03 IST" name="launchUrl" finished-at="2025-04-23T10:48:12 IST" duration-ms="9070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method signature="jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:55:48 IST" name="jewelryEarRingFlow" description="Verifying the functionality of Earring. Selecting the studd, adding to the cart and completing checkout flow." finished-at="2025-04-10T14:56:12 IST" duration-ms="24360" status="PASS">
+        <test-method signature="startWithADiamond()[pri:0, instance:library.com.EngagementDiamondFlow@3c19aaa5]" started-at="2025-04-23T10:48:12 IST" name="startWithADiamond" description="Tested the flow of selecting a diamond. Selecting the diamond, customizing the setting, adding to the cart, and completing the checkout flow." finished-at="2025-04-23T10:48:39 IST" duration-ms="26145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jewelryEarRingFlow -->
-        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.EarRings@4f83df68]" started-at="2025-04-10T14:56:12 IST" name="tearDownAndClose" finished-at="2025-04-10T14:56:12 IST" duration-ms="229" status="PASS">
+        </test-method> <!-- startWithADiamond -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:library.com.EngagementDiamondFlow@3c19aaa5]" started-at="2025-04-23T10:48:39 IST" name="tearDownAndClose" finished-at="2025-04-23T10:48:40 IST" duration-ms="1773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=jewelryEarRingFlow status=SUCCESS method=EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@4f83df68] output={null}]]]>
+                <![CDATA[[TestResult name=startWithADiamond status=SUCCESS method=EngagementDiamondFlow.startWithADiamond()[pri:0, instance:library.com.EngagementDiamondFlow@3c19aaa5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- library.com.EngagementDiamondFlow -->
+      <class name="library.com.EngagementSettingFlow">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:48:40 IST" name="launchUrl" finished-at="2025-04-23T10:48:44 IST" duration-ms="3307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="startWithASetting()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:48:44 IST" name="startWithASetting" description="Tested the flow of selecting a Setting. Select the setting, adding diamond, adding to the cart, and completing the checkout flow." finished-at="2025-04-23T10:48:59 IST" duration-ms="15299" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Select this setting'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54c1cf9f61ca828af51270f72da4f453, findElement {using=xpath, value=(//button[text()='Select this setting'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59070/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54c1cf9f61ca828af51270f72da4f453]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Select this setting'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54c1cf9f61ca828af51270f72da4f453, findElement {using=xpath, value=(//button[text()='Select this setting'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59070}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59070/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54c1cf9f61ca828af51270f72da4f453
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageobjects.com.FDPageObjectData.selectThisSetting(FDPageObjectData.java:195)
+at library.com.EngagementSettingFlow.startWithASetting(EngagementSettingFlow.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWithASetting -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:48:59 IST" name="tearDownAndClose" finished-at="2025-04-23T10:48:59 IST" duration-ms="194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startWithASetting status=SKIP method=EngagementSettingFlow.startWithASetting()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:48:59 IST" name="launchUrl" finished-at="2025-04-23T10:49:03 IST" duration-ms="4016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="startWithASetting()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:49:03 IST" name="startWithASetting" description="Tested the flow of selecting a Setting. Select the setting, adding diamond, adding to the cart, and completing the checkout flow." finished-at="2025-04-23T10:49:08 IST" duration-ms="4411" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-7">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec66c57dd7fc67318cc5d4878d3224aa, clickElement {id=f.A9F48075320B0984E8833B22F3662B4A.d.2ED5FE67EF34103505346617C22F41C0.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59166/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec66c57dd7fc67318cc5d4878d3224aa)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: ec66c57dd7fc67318cc5d4878d3224aa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-7">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec66c57dd7fc67318cc5d4878d3224aa, clickElement {id=f.A9F48075320B0984E8833B22F3662B4A.d.2ED5FE67EF34103505346617C22F41C0.e.81}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59166/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec66c57dd7fc67318cc5d4878d3224aa)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: ec66c57dd7fc67318cc5d4878d3224aa
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+at library.com.EngagementSettingFlow.startWithASetting(EngagementSettingFlow.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWithASetting -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f]" started-at="2025-04-23T10:49:08 IST" name="tearDownAndClose" finished-at="2025-04-23T10:49:08 IST" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startWithASetting status=FAILURE method=EngagementSettingFlow.startWithASetting()[pri:0, instance:library.com.EngagementSettingFlow@3e694b3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- library.com.EngagementSettingFlow -->
+    </test> <!-- DiamondFlowTests -->
+    <test started-at="2025-04-23T10:49:08 IST" name="JewelryFlowTests" finished-at="2025-04-23T10:51:17 IST" duration-ms="129472">
+      <class name="jewelry.com.NecklacesFlow">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.NecklacesFlow@3857f613]" started-at="2025-04-23T10:50:10 IST" name="launchUrl" finished-at="2025-04-23T10:50:12 IST" duration-ms="2632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="jewelryEarRingFlow()[pri:0, instance:jewelry.com.NecklacesFlow@3857f613]" started-at="2025-04-23T10:50:12 IST" name="jewelryEarRingFlow" description="Tested the flow of Necklace. Selecting the necklace, Adding diamond to the neckalce,then add to the cart and completing the checkout flow." finished-at="2025-04-23T10:50:49 IST" duration-ms="36477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jewelryEarRingFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.NecklacesFlow@3857f613]" started-at="2025-04-23T10:50:49 IST" name="tearDownAndClose" finished-at="2025-04-23T10:50:49 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jewelryEarRingFlow status=SUCCESS method=NecklacesFlow.jewelryEarRingFlow()[pri:0, instance:jewelry.com.NecklacesFlow@3857f613] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- jewelry.com.NecklacesFlow -->
+      <class name="jewelry.com.EarRings">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.EarRings@489115ef]" started-at="2025-04-23T10:49:42 IST" name="launchUrl" finished-at="2025-04-23T10:49:44 IST" duration-ms="2874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@489115ef]" started-at="2025-04-23T10:49:44 IST" name="jewelryEarRingFlow" description="Verifying the functionality of Earring. Selecting the studd, adding to the cart and completing checkout flow." finished-at="2025-04-23T10:50:09 IST" duration-ms="24915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jewelryEarRingFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.EarRings@489115ef]" started-at="2025-04-23T10:50:09 IST" name="tearDownAndClose" finished-at="2025-04-23T10:50:10 IST" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jewelryEarRingFlow status=SUCCESS method=EarRings.jewelryEarRingFlow()[pri:0, instance:jewelry.com.EarRings@489115ef] output={null}]]]>
               </value>
             </param>
           </params>
@@ -30,6 +271,900 @@
           </reporter-output>
         </test-method> <!-- tearDownAndClose -->
       </class> <!-- jewelry.com.EarRings -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="jewelry.com.GiftGuide">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.GiftGuide@15de0b3c]" started-at="2025-04-23T10:49:08 IST" name="launchUrl" finished-at="2025-04-23T10:49:11 IST" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="giftGuideFlow()[pri:0, instance:jewelry.com.GiftGuide@15de0b3c]" started-at="2025-04-23T10:49:11 IST" name="giftGuideFlow" description="Tested the flow of Gift guide. Selecting the gift guide product, adding to cart, and completing checkout flow." finished-at="2025-04-23T10:49:41 IST" duration-ms="30584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- giftGuideFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.GiftGuide@15de0b3c]" started-at="2025-04-23T10:49:41 IST" name="tearDownAndClose" finished-at="2025-04-23T10:49:42 IST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=giftGuideFlow status=SUCCESS method=GiftGuide.giftGuideFlow()[pri:0, instance:jewelry.com.GiftGuide@15de0b3c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- jewelry.com.GiftGuide -->
+      <class name="jewelry.com.TennisBraceletsFlow">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:jewelry.com.TennisBraceletsFlow@198b6731]" started-at="2025-04-23T10:50:49 IST" name="launchUrl" finished-at="2025-04-23T10:50:53 IST" duration-ms="3958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="tennisBracelets()[pri:0, instance:jewelry.com.TennisBraceletsFlow@198b6731]" started-at="2025-04-23T10:50:53 IST" name="tennisBracelets" description="Tested the flow of TennisBraceletsFlow. Selecting the Bracelet, adding to the cart, and completing the checkout flow." finished-at="2025-04-23T10:51:17 IST" duration-ms="24422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tennisBracelets -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:jewelry.com.TennisBraceletsFlow@198b6731]" started-at="2025-04-23T10:51:17 IST" name="tearDownAndClose" finished-at="2025-04-23T10:51:17 IST" duration-ms="199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tennisBracelets status=SUCCESS method=TennisBraceletsFlow.tennisBracelets()[pri:0, instance:jewelry.com.TennisBraceletsFlow@198b6731] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- jewelry.com.TennisBraceletsFlow -->
+    </test> <!-- JewelryFlowTests -->
+    <test started-at="2025-04-23T10:51:17 IST" name="Wedding Navbar Flow Testcases" finished-at="2025-04-23T10:54:07 IST" duration-ms="169877">
+      <class name="weddings.library.com.GoldBands">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.GoldBands@1ce24091]" started-at="2025-04-23T10:53:38 IST" name="launchUrl" finished-at="2025-04-23T10:53:42 IST" duration-ms="3278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="goldBands()[pri:0, instance:weddings.library.com.GoldBands@1ce24091]" started-at="2025-04-23T10:53:42 IST" name="goldBands" description="Tested the flow of Gold Bands. Selecting the gold band ring, adding to the cart and completing checkout flow." finished-at="2025-04-23T10:54:07 IST" duration-ms="25497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goldBands -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.GoldBands@1ce24091]" started-at="2025-04-23T10:54:07 IST" name="tearDownAndClose" finished-at="2025-04-23T10:54:07 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=goldBands status=SUCCESS method=GoldBands.goldBands()[pri:0, instance:weddings.library.com.GoldBands@1ce24091] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.GoldBands -->
+      <class name="weddings.library.com.AnniversaryRings">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.AnniversaryRings@ba2f4ec]" started-at="2025-04-23T10:51:45 IST" name="launchUrl" finished-at="2025-04-23T10:51:49 IST" duration-ms="3250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="anniversaryRingFlow()[pri:0, instance:weddings.library.com.AnniversaryRings@ba2f4ec]" started-at="2025-04-23T10:51:49 IST" name="anniversaryRingFlow" description="Tested the flow Anniversay Ring. Selecting the anniversary Ring, adding to the cart, and completing the checkout flow." finished-at="2025-04-23T10:52:13 IST" duration-ms="24215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- anniversaryRingFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.AnniversaryRings@ba2f4ec]" started-at="2025-04-23T10:52:13 IST" name="tearDownAndClose" finished-at="2025-04-23T10:52:13 IST" duration-ms="184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=anniversaryRingFlow status=SUCCESS method=AnniversaryRings.anniversaryRingFlow()[pri:0, instance:weddings.library.com.AnniversaryRings@ba2f4ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.AnniversaryRings -->
+      <class name="weddings.library.com.EternityBand">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.EternityBand@fbd1f6]" started-at="2025-04-23T10:53:10 IST" name="launchUrl" finished-at="2025-04-23T10:53:12 IST" duration-ms="2612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="eternityBandFlow()[pri:0, instance:weddings.library.com.EternityBand@fbd1f6]" started-at="2025-04-23T10:53:12 IST" name="eternityBandFlow" description="Tested the flow of Eternity band. Selecting the Eternity Ring, adding to the cart and completing the checkout flow." finished-at="2025-04-23T10:53:38 IST" duration-ms="25627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eternityBandFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.EternityBand@fbd1f6]" started-at="2025-04-23T10:53:38 IST" name="tearDownAndClose" finished-at="2025-04-23T10:53:38 IST" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=eternityBandFlow status=SUCCESS method=EternityBand.eternityBandFlow()[pri:0, instance:weddings.library.com.EternityBand@fbd1f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.EternityBand -->
+      <class name="weddings.library.com.DiamondBands">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.DiamondBands@55fe41ea]" started-at="2025-04-23T10:52:41 IST" name="launchUrl" finished-at="2025-04-23T10:52:44 IST" duration-ms="3398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="diamondBandFlow()[pri:0, instance:weddings.library.com.DiamondBands@55fe41ea]" started-at="2025-04-23T10:52:44 IST" name="diamondBandFlow" description="Tested the flow of Diamond bands. Selecting the Diamond, adding to the cart and completing the checkout flow." finished-at="2025-04-23T10:53:10 IST" duration-ms="25755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- diamondBandFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.DiamondBands@55fe41ea]" started-at="2025-04-23T10:53:10 IST" name="tearDownAndClose" finished-at="2025-04-23T10:53:10 IST" duration-ms="164" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=diamondBandFlow status=SUCCESS method=DiamondBands.diamondBandFlow()[pri:0, instance:weddings.library.com.DiamondBands@55fe41ea] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.DiamondBands -->
+      <class name="weddings.library.com.StackingRings">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.StackingRings@1c1bbc4e]" started-at="2025-04-23T10:52:13 IST" name="launchUrl" finished-at="2025-04-23T10:52:16 IST" duration-ms="3073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="stackingRingsFlow()[pri:0, instance:weddings.library.com.StackingRings@1c1bbc4e]" started-at="2025-04-23T10:52:16 IST" name="stackingRingsFlow" description="Tested the flow of Stacking Rings. Selecting the Stacking ring, adding to the cart and completing the checkout." finished-at="2025-04-23T10:52:40 IST" duration-ms="24341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stackingRingsFlow -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.StackingRings@1c1bbc4e]" started-at="2025-04-23T10:52:40 IST" name="tearDownAndClose" finished-at="2025-04-23T10:52:41 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=stackingRingsFlow status=SUCCESS method=StackingRings.stackingRingsFlow()[pri:0, instance:weddings.library.com.StackingRings@1c1bbc4e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.StackingRings -->
+      <class name="weddings.library.com.MenWeddingBands">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:17 IST" name="launchUrl" finished-at="2025-04-23T10:51:21 IST" duration-ms="3332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="menWeddingBands()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:21 IST" name="menWeddingBands" description="Tested the flow of Men Wedding bands. Selecting the Men Wedding Band, adding the product to cart and completing the checkout flow." finished-at="2025-04-23T10:51:25 IST" duration-ms="4631" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="wedding-rings-11">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29e25964d886f537d5f58e8017a69df0, clickElement {id=f.2D0E14B73E21891E0C68B6AEA82251F9.d.4265AB1B0079132DF4AC3269AF072154.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59935/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29e25964d886f537d5f58e8017a69df0)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]]
+Session ID: 29e25964d886f537d5f58e8017a69df0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="wedding-rings-11">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29e25964d886f537d5f58e8017a69df0, clickElement {id=f.2D0E14B73E21891E0C68B6AEA82251F9.d.4265AB1B0079132DF4AC3269AF072154.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59935}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59935/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29e25964d886f537d5f58e8017a69df0)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]]
+Session ID: 29e25964d886f537d5f58e8017a69df0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+at weddings.library.com.MenWeddingBands.menWeddingBands(MenWeddingBands.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menWeddingBands -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:25 IST" name="tearDownAndClose" finished-at="2025-04-23T10:51:26 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=menWeddingBands status=SKIP method=MenWeddingBands.menWeddingBands()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:26 IST" name="launchUrl" finished-at="2025-04-23T10:51:28 IST" duration-ms="2563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="menWeddingBands()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:28 IST" name="menWeddingBands" description="Tested the flow of Men Wedding bands. Selecting the Men Wedding Band, adding the product to cart and completing the checkout flow." finished-at="2025-04-23T10:51:45 IST" duration-ms="16906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menWeddingBands -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:weddings.library.com.MenWeddingBands@49438269]" started-at="2025-04-23T10:51:45 IST" name="tearDownAndClose" finished-at="2025-04-23T10:51:45 IST" duration-ms="206" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=menWeddingBands status=SUCCESS method=MenWeddingBands.menWeddingBands()[pri:0, instance:weddings.library.com.MenWeddingBands@49438269] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- weddings.library.com.MenWeddingBands -->
+    </test> <!-- Wedding Navbar Flow Testcases -->
+    <test started-at="2025-04-23T10:54:07 IST" name="Cart-Checkout Related Testcases" finished-at="2025-04-23T11:01:05 IST" duration-ms="418070">
+      <class name="cartCheckout.SettingsJewelryWeddingItems">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:08 IST" name="launchUrl" finished-at="2025-04-23T10:59:11 IST" duration-ms="3308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:11 IST" name="cancelProductsFromCart" description="Removing the added products from the cart i.e., setting-Diamond flow,Jewelry products, Anniversary ring." finished-at="2025-04-23T10:59:15 IST" duration-ms="4415" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-11">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf192b91bbd4e457e411e9db5c6a7700, clickElement {id=f.7D2E339BB935FED7E9AE3265E255E433.d.FA0C0E07A3F77F5AD176AD317BDB80D1.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62085/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf192b91bbd4e457e411e9db5c6a7700)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: cf192b91bbd4e457e411e9db5c6a7700]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-11">...</div> is not clickable at point (1344, 486). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf192b91bbd4e457e411e9db5c6a7700, clickElement {id=f.7D2E339BB935FED7E9AE3265E255E433.d.FA0C0E07A3F77F5AD176AD317BDB80D1.e.82}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62085}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62085/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cf192b91bbd4e457e411e9db5c6a7700)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: cf192b91bbd4e457e411e9db5c6a7700
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelProductsFromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:15 IST" name="tearDownAndClose" finished-at="2025-04-23T10:59:15 IST" duration-ms="194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cancelProductsFromCart status=SKIP method=SettingsJewelryWeddingItems.cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:15 IST" name="launchUrl" finished-at="2025-04-23T10:59:20 IST" duration-ms="4399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:20 IST" name="cancelProductsFromCart" description="Removing the added products from the cart i.e., setting-Diamond flow,Jewelry products, Anniversary ring." finished-at="2025-04-23T10:59:36 IST" duration-ms="15717" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Select this setting'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73333ece136185ef9ea83a82040c31bd, findElement {using=xpath, value=(//button[text()='Select this setting'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62169/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73333ece136185ef9ea83a82040c31bd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Select this setting'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73333ece136185ef9ea83a82040c31bd, findElement {using=xpath, value=(//button[text()='Select this setting'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62169/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73333ece136185ef9ea83a82040c31bd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageobjects.com.FDPageObjectData.selectThisSetting(FDPageObjectData.java:195)
+at cartCheckout.SettingsJewelryWeddingItems.cancelProductsFromCart(SettingsJewelryWeddingItems.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelProductsFromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968]" started-at="2025-04-23T10:59:36 IST" name="tearDownAndClose" finished-at="2025-04-23T10:59:36 IST" duration-ms="369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cancelProductsFromCart status=FAILURE method=SettingsJewelryWeddingItems.cancelProductsFromCart()[pri:0, instance:cartCheckout.SettingsJewelryWeddingItems@544fa968] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
+      <class name="cartCheckout.DiamondsCombinationToCart">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.DiamondsCombinationToCart@d35dea7]" started-at="2025-04-23T11:00:21 IST" name="launchUrl" finished-at="2025-04-23T11:00:24 IST" duration-ms="2936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="defaultDiamondAndNormalDiamonds()[pri:0, instance:cartCheckout.DiamondsCombinationToCart@d35dea7]" started-at="2025-04-23T11:00:24 IST" name="defaultDiamondAndNormalDiamonds" description="Removing added diamonds i.e, normal and default diamond from the cart." finished-at="2025-04-23T11:01:05 IST" duration-ms="41528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultDiamondAndNormalDiamonds -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.DiamondsCombinationToCart@d35dea7]" started-at="2025-04-23T11:01:05 IST" name="tearDownAndClose" finished-at="2025-04-23T11:01:05 IST" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defaultDiamondAndNormalDiamonds status=SUCCESS method=DiamondsCombinationToCart.defaultDiamondAndNormalDiamonds()[pri:0, instance:cartCheckout.DiamondsCombinationToCart@d35dea7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.DiamondsCombinationToCart -->
+      <class name="cartCheckout.RemovingJewelryWeddingProducts">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5]" started-at="2025-04-23T10:58:09 IST" name="launchUrl" finished-at="2025-04-23T10:58:13 IST" duration-ms="4258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="RemovingTheProductsFromTheCart()[pri:0, instance:cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5]" started-at="2025-04-23T10:58:13 IST" name="RemovingTheProductsFromTheCart" description="Adding and removing the jewelry and wedding products from the cart." finished-at="2025-04-23T10:59:07 IST" duration-ms="54444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemovingTheProductsFromTheCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5]" started-at="2025-04-23T10:59:07 IST" name="tearDownAndClose" finished-at="2025-04-23T10:59:08 IST" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RemovingTheProductsFromTheCart status=SUCCESS method=RemovingJewelryWeddingProducts.RemovingTheProductsFromTheCart()[pri:0, instance:cartCheckout.RemovingJewelryWeddingProducts@3bd82cf5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.RemovingJewelryWeddingProducts -->
+      <class name="cartCheckout.RemovingWeddingProducts">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.RemovingWeddingProducts@fa4c865]" started-at="2025-04-23T10:57:18 IST" name="launchUrl" finished-at="2025-04-23T10:57:21 IST" duration-ms="2966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="removingWeddingProductsFromCart()[pri:0, instance:cartCheckout.RemovingWeddingProducts@fa4c865]" started-at="2025-04-23T10:57:21 IST" name="removingWeddingProductsFromCart" description="verified Removal of wedding products from the cart" finished-at="2025-04-23T10:58:08 IST" duration-ms="47513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingWeddingProductsFromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.RemovingWeddingProducts@fa4c865]" started-at="2025-04-23T10:58:08 IST" name="tearDownAndClose" finished-at="2025-04-23T10:58:09 IST" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removingWeddingProductsFromCart status=SUCCESS method=RemovingWeddingProducts.removingWeddingProductsFromCart()[pri:0, instance:cartCheckout.RemovingWeddingProducts@fa4c865] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.RemovingWeddingProducts -->
+      <class name="cartCheckout.RemovingJewelryProducts">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:56:07 IST" name="launchUrl" finished-at="2025-04-23T10:56:10 IST" duration-ms="2917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="removingJewelryProductsFromCart()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:56:10 IST" name="removingJewelryProductsFromCart" description="Verified removal of all jewelry products from the cart." finished-at="2025-04-23T10:56:24 IST" duration-ms="14364" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-4">...</div> is not clickable at point (1344, 384). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2265c97ab47b34b58c95d7072ce47092, clickElement {id=f.AB99F3DE816DE90735E5DC5EBC43D197.d.7E65450EB56E93C913EC2C69716FF576.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61664/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2265c97ab47b34b58c95d7072ce47092)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: 2265c97ab47b34b58c95d7072ce47092]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="bg-white border-theme-blue relative group overflow-hidden text-theme-blue w-vw-1/2 h-vw-7/12 sm:h-vw-1/2 lg:w-vw-1/3 lg:h-vw-1/3  2xl:h-vw-1/4 2xl:w-vw-1/4 border-r border-b" id="engagement-rings-4">...</div> is not clickable at point (1344, 384). Other element would receive the click: <iframe title="Re:amaze Chat" allow="microphone; camera" allowfullscreen="" allowtransparency="true" style="width: 100% !important; height: 100% !important; border: 0px; position: relative;"></iframe>
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2265c97ab47b34b58c95d7072ce47092, clickElement {id=f.AB99F3DE816DE90735E5DC5EBC43D197.d.7E65450EB56E93C913EC2C69716FF576.e.88}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61664/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2265c97ab47b34b58c95d7072ce47092)] -> xpath: //div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]]
+Session ID: 2265c97ab47b34b58c95d7072ce47092
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.clickRandomProduct(FDPageObjectData.java:452)
+at cartCheckout.RemovingJewelryProducts.removingJewelryProductsFromCart(RemovingJewelryProducts.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingJewelryProductsFromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:56:24 IST" name="tearDownAndClose" finished-at="2025-04-23T10:56:25 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removingJewelryProductsFromCart status=SKIP method=RemovingJewelryProducts.removingJewelryProductsFromCart()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:56:25 IST" name="launchUrl" finished-at="2025-04-23T10:56:27 IST" duration-ms="2781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="removingJewelryProductsFromCart()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:56:27 IST" name="removingJewelryProductsFromCart" description="Verified removal of all jewelry products from the cart." finished-at="2025-04-23T10:57:18 IST" duration-ms="50297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingJewelryProductsFromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76]" started-at="2025-04-23T10:57:18 IST" name="tearDownAndClose" finished-at="2025-04-23T10:57:18 IST" duration-ms="234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removingJewelryProductsFromCart status=SUCCESS method=RemovingJewelryProducts.removingJewelryProductsFromCart()[pri:0, instance:cartCheckout.RemovingJewelryProducts@4c178a76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.RemovingJewelryProducts -->
+      <class name="cartCheckout.MultipleDefaultDiamondsToCart">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:54:07 IST" name="launchUrl" finished-at="2025-04-23T10:54:15 IST" duration-ms="7991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="defaultDiamondCombinations()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:54:15 IST" name="defaultDiamondCombinations" description="Verifying the functionality of adding the multiple default diamonds to the cart and completing the checkout flow." finished-at="2025-04-23T10:54:34 IST" duration-ms="18910" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1544, 664)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecf5a0c44d7d877dcfb25f9eea1f4d02, clickElement {id=f.BFB2D5648ED1E7619D6D9AA61B406C51.d.E49FB40DA1E34DCA0BE425D43DB95044.e.295}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61168/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecf5a0c44d7d877dcfb25f9eea1f4d02)] -> xpath: //button[text()='Checkout']]
+Session ID: ecf5a0c44d7d877dcfb25f9eea1f4d02]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1544, 664)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ecf5a0c44d7d877dcfb25f9eea1f4d02, clickElement {id=f.BFB2D5648ED1E7619D6D9AA61B406C51.d.E49FB40DA1E34DCA0BE425D43DB95044.e.295}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61168}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61168/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ecf5a0c44d7d877dcfb25f9eea1f4d02)] -> xpath: //button[text()='Checkout']]
+Session ID: ecf5a0c44d7d877dcfb25f9eea1f4d02
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultDiamondCombinations -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:54:34 IST" name="tearDownAndClose" finished-at="2025-04-23T10:54:34 IST" duration-ms="213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defaultDiamondCombinations status=SKIP method=MultipleDefaultDiamondsToCart.defaultDiamondCombinations()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:54:34 IST" name="launchUrl" finished-at="2025-04-23T10:54:38 IST" duration-ms="3437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="defaultDiamondCombinations()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:54:38 IST" name="defaultDiamondCombinations" description="Verifying the functionality of adding the multiple default diamonds to the cart and completing the checkout flow." finished-at="2025-04-23T10:55:00 IST" duration-ms="22489" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1546, 657)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d5f4f3a14eb7da685a41c3d8a66e388, clickElement {id=f.3B9E56C1ECBAF366DE7569369BEB1F8D.d.6D2659B43343F01AFCCF32B597A61803.e.289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61275/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3d5f4f3a14eb7da685a41c3d8a66e388)] -> xpath: //button[text()='Checkout']]
+Session ID: 3d5f4f3a14eb7da685a41c3d8a66e388]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1546, 657)
+  (Session info: chrome=135.0.7049.96)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3d5f4f3a14eb7da685a41c3d8a66e388, clickElement {id=f.3B9E56C1ECBAF366DE7569369BEB1F8D.d.6D2659B43343F01AFCCF32B597A61803.e.289}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61275/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3d5f4f3a14eb7da685a41c3d8a66e388)] -> xpath: //button[text()='Checkout']]
+Session ID: 3d5f4f3a14eb7da685a41c3d8a66e388
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at pageobjects.com.FDPageObjectData.proceedToCheckout(FDPageObjectData.java:224)
+at cartCheckout.MultipleDefaultDiamondsToCart.defaultDiamondCombinations(MultipleDefaultDiamondsToCart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultDiamondCombinations -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559]" started-at="2025-04-23T10:55:00 IST" name="tearDownAndClose" finished-at="2025-04-23T10:55:01 IST" duration-ms="395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=defaultDiamondCombinations status=FAILURE method=MultipleDefaultDiamondsToCart.defaultDiamondCombinations()[pri:0, instance:cartCheckout.MultipleDefaultDiamondsToCart@2362f559] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
+      <class name="cartCheckout.SWADJewelry">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.SWADJewelry@247bddad]" started-at="2025-04-23T10:59:36 IST" name="launchUrl" finished-at="2025-04-23T10:59:44 IST" duration-ms="7877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="removingProductsfromCart()[pri:0, instance:cartCheckout.SWADJewelry@247bddad]" started-at="2025-04-23T10:59:44 IST" name="removingProductsfromCart" description="Removing the added products from the cart i.e., Diamond-Setting flow,Jewelry products, Anniversary ring." finished-at="2025-04-23T11:00:20 IST" duration-ms="36579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removingProductsfromCart -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.SWADJewelry@247bddad]" started-at="2025-04-23T11:00:20 IST" name="tearDownAndClose" finished-at="2025-04-23T11:00:21 IST" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removingProductsfromCart status=SUCCESS method=SWADJewelry.removingProductsfromCart()[pri:0, instance:cartCheckout.SWADJewelry@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.SWADJewelry -->
+      <class name="cartCheckout.MultipleProductsToCheckout">
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:55:01 IST" name="launchUrl" finished-at="2025-04-23T10:55:03 IST" duration-ms="2602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method retried="true" signature="addingMultipleProductsToCheckout()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:55:03 IST" name="addingMultipleProductsToCheckout" description="Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow." finished-at="2025-04-23T10:55:30 IST" duration-ms="26252" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Add to Cart'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d00a2c8735c10a27d4f4fae81b27ca5, findElement {using=xpath, value=(//button[text()='Add to Cart'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d00a2c8735c10a27d4f4fae81b27ca5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()='Add to Cart'])[2]"}
+  (Session info: chrome=135.0.7049.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0d00a2c8735c10a27d4f4fae81b27ca5, findElement {using=xpath, value=(//button[text()='Add to Cart'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\Naveen\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61385/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0d00a2c8735c10a27d4f4fae81b27ca5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at pageobjects.com.FDPageObjectData.addToCartButton(FDPageObjectData.java:265)
+at cartCheckout.MultipleProductsToCheckout.addingMultipleProductsToCheckout(MultipleProductsToCheckout.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingMultipleProductsToCheckout -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:55:30 IST" name="tearDownAndClose" finished-at="2025-04-23T10:55:30 IST" duration-ms="188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addingMultipleProductsToCheckout status=SKIP method=MultipleProductsToCheckout.addingMultipleProductsToCheckout()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+        <test-method is-config="true" signature="launchUrl()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:55:30 IST" name="launchUrl" finished-at="2025-04-23T10:55:33 IST" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method signature="addingMultipleProductsToCheckout()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:55:33 IST" name="addingMultipleProductsToCheckout" description="Verifing the functionality of adding multiple product combinations to the cart and completing the checkout flow." finished-at="2025-04-23T10:56:07 IST" duration-ms="33902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingMultipleProductsToCheckout -->
+        <test-method is-config="true" signature="tearDownAndClose(org.testng.ITestResult)[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c]" started-at="2025-04-23T10:56:07 IST" name="tearDownAndClose" finished-at="2025-04-23T10:56:07 IST" duration-ms="229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addingMultipleProductsToCheckout status=SUCCESS method=MultipleProductsToCheckout.addingMultipleProductsToCheckout()[pri:0, instance:cartCheckout.MultipleProductsToCheckout@b2c9a9c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAndClose -->
+      </class> <!-- cartCheckout.MultipleProductsToCheckout -->
+    </test> <!-- Cart-Checkout Related Testcases -->
+  </suite> <!-- FrankDarling-Master Suite -->
 </testng-results>

@@ -393,7 +393,11 @@ public class FDPageObjectData
   public static  By weddingProductPLP=By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'wedding-rings')]");
   
   public static By jewelryProductsPLP = By.xpath("//div[contains(@class,'w-vw-1/2 h') and contains(@id,'engagement-rings')]");
+   
   
+  //Diamond setting PLP
+  public static By diamondSettingPLP = By.xpath("//div[contains(@class,'w-vw-1/2 h')]");
+
 
       //Method to get the list of product items
     public List<WebElement> getProductList(By productLocator) 

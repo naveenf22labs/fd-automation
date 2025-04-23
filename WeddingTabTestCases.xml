@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
 <suite name="FrankDarling-Wedding Tab Test cases">
     
     
+     <listeners>
+        <listener class-name="utils.com.RetryListener"/>
+    </listeners>
     <test name="MenWeddingBandsFlowTest">
         <classes>
             <class name="weddings.library.com.MenWeddingBands" />

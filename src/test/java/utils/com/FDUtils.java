@@ -27,8 +27,7 @@ public class FDUtils
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(12));
 		driver.get("https://frankdarling.com");
 		// System.out.println("Driver initialized: " + driver);
 	}

@@ -16,16 +16,20 @@ public class MultipleDefaultDiamondsToCart extends FDUtils
     	 cart.startWithSetting();
     	 cart.doubleClickReamazeWidget();
          cart.closePopUp();
-         cart.selectHarperRing();
+         cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP); 
+         Thread.sleep(2000);
+        // cart.selectHarperRing();
          cart.selectThisSetting();
          cart.defaultDiamond();
          cart.clickEngagementLink();
     	 cart.startWithSetting();
-    	// cart.doubleClickReamazeWidget();
+    	 cart.doubleClickReamazeWidget();
         // cart.closePopUp();
-         cart.selectHarperRing();
+    	 cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+         //cart.selectHarperRing();
          cart.selectThisSetting();
          cart.defaultDiamond();
+         //Thread.sleep(2000);
      	cart.proceedToCheckout();
      	cart.checkoutValidation(); 
          

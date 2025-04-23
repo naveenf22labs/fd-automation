@@ -16,7 +16,8 @@ public class EngagementSettingFlow extends FDUtils
 		  FDPageObjectData engagementPage= new FDPageObjectData(driver); 
 	         engagementPage.clickEngagementLink();
 	    	 engagementPage.startWithSetting();
-	         engagementPage.selectHarperRing();
+	    	 engagementPage.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+	        // engagementPage.selectHarperRing();
 	         engagementPage.selectThisSetting();
 	         //reusing diamond button properties only  its mentioned diamond but it works for setting as well
 	         engagementPage.searchSettingForThisDiamond(); 
@@ -24,7 +25,8 @@ public class EngagementSettingFlow extends FDUtils
 	         engagementPage.closePopUp();
 	        engagementPage.doubleClickReamazeWidget();
 	        engagementPage.selectDiamond2();
-	         engagementPage.addStoneToSetting();
+	        Thread.sleep(2000);
+	        engagementPage.addStoneToSetting();
 	         Thread.sleep(3000);
 	         engagementPage.proceedToCheckout();
 	         engagementPage.checkoutValidation();

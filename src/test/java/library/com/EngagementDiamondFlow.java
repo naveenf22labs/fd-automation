@@ -24,7 +24,8 @@ public class EngagementDiamondFlow extends FDUtils
         engagementPage.selectDiamond1();
         engagementPage.selectThisStone();
         engagementPage.searchSettingForThisDiamond();
-        engagementPage.selectHarperRing();
+        engagementPage.clickRandomProduct(FDPageObjectData.diamondSettingPLP);
+      //  engagementPage.selectHarperRing();
         engagementPage.addSettingToStone();
         engagementPage.proceedToCheckout();
         engagementPage.checkoutValidation();

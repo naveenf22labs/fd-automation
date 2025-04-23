@@ -20,7 +20,8 @@ public class RemovingJewelryWeddingProducts extends FDUtils
     	cart.addToCartButton();
     	cart.jewelryNav();
 		cart.selectTennisNecklace();
-		cart.jewleryPlp();
+        cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+		
 		cart.addToCartButton();
 		//adding Necklace+diamond combo
 		cart.jewelryNav();
