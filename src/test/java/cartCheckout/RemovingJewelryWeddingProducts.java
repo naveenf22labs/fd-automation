@@ -27,7 +27,8 @@ public class RemovingJewelryWeddingProducts extends FDUtils
 		cart.jewelryNav();
         cart.selectnecklesOption();
         Thread.sleep(2000);
-    	cart.jewleryPlp();
+        cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+    	//cart.jewleryPlp();
     	cart.selectThisNecklaceButton();
     	// using diamond flow method only bcz we created unique xpath for reusability.
     	cart.searchSettingForThisDiamond();
@@ -48,7 +49,7 @@ public class RemovingJewelryWeddingProducts extends FDUtils
     	cart.cartFocusUp();
     	cart.removeAllProductsFromCart();
 		//cart.removeProductFromCart(1);
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	}
 
 }

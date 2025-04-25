@@ -41,7 +41,7 @@ public class RemovingJewelryProducts extends FDUtils
 	    	Thread.sleep(3000);
 	    	cart.cartFocusUp();
              cart.removeAllProductsFromCart();
-             Thread.sleep(2000);
+           //  Thread.sleep(2000);
 			//cart.removeProductFromCart(1);
 		
 	}

@@ -3,6 +3,7 @@ package pageobjects.com;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -102,7 +103,9 @@ public class FDPageObjectData
     }
 // New Removal code
     private By allCartRemoveIcons=By.xpath("(//span[@class='mr-1.5 cursor-pointer']//*[name()='svg'])");
-    public void removeAllProductsFromCart() {
+    public void removeAllProductsFromCart()
+    {
+    	driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
         int removedCount = 0;
         List<WebElement> removeIcons = driver.findElements(allCartRemoveIcons);
 

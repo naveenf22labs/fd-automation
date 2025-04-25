@@ -4,22 +4,29 @@
   <listeners>
     <listener class-name="utils.com.RetryListener"/>
   </listeners>
-  <test thread-count="5" name="DiamondFlowTests(failed)">
+  <test thread-count="5" name="JewelryFlowTests(failed)">
     <groups>
       <run>
-        <include name="diamond"/>
+        <include name="jewelry"/>
       </run>
     </groups>
     <classes>
-      <class name="library.com.EngagementSettingFlow">
+      <class name="jewelry.com.TennisBraceletsFlow">
         <methods>
           <include name="launchUrl"/>
+          <include name="tennisBracelets"/>
           <include name="tearDownAndClose"/>
-          <include name="startWithASetting"/>
         </methods>
-      </class> <!-- library.com.EngagementSettingFlow -->
+      </class> <!-- jewelry.com.TennisBraceletsFlow -->
+      <class name="jewelry.com.NecklacesFlow">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="jewelryEarRingFlow"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- jewelry.com.NecklacesFlow -->
     </classes>
-  </test> <!-- DiamondFlowTests(failed) -->
+  </test> <!-- JewelryFlowTests(failed) -->
   <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
     <groups>
       <run>
@@ -27,13 +34,13 @@
       </run>
     </groups>
     <classes>
-      <class name="weddings.library.com.MenWeddingBands">
+      <class name="weddings.library.com.AnniversaryRings">
         <methods>
-          <include name="menWeddingBands"/>
           <include name="launchUrl"/>
+          <include name="anniversaryRingFlow"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- weddings.library.com.MenWeddingBands -->
+      </class> <!-- weddings.library.com.AnniversaryRings -->
     </classes>
   </test> <!-- Wedding Navbar Flow Testcases(failed) -->
   <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
@@ -43,20 +50,6 @@
       </run>
     </groups>
     <classes>
-      <class name="cartCheckout.MultipleProductsToCheckout">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="addingMultipleProductsToCheckout"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.MultipleProductsToCheckout -->
-      <class name="cartCheckout.SettingsJewelryWeddingItems">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="cancelProductsFromCart"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
       <class name="cartCheckout.MultipleDefaultDiamondsToCart">
         <methods>
           <include name="launchUrl"/>
@@ -64,13 +57,6 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
-      <class name="cartCheckout.RemovingJewelryProducts">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="removingJewelryProductsFromCart"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.RemovingJewelryProducts -->
     </classes>
   </test> <!-- Cart-Checkout Related Testcases(failed) -->
 </suite> <!-- Failed suite [FrankDarling-Master Suite] -->

@@ -21,7 +21,7 @@ public class LocationDropdown extends FDUtils
 		  dropdown.showrooms();
 		  dropdown.virtualAppointments();
 		  dropdown.closePopUp();
-		// Get the first dropdown (appointment type) and second dropdown (location)
+		// Get the first dropdown(appointment type) and second dropdown (location)
 		  WebElement dropdown1 = driver.findElement(By.id("input-select-ringType-select-an-appointment-type"));
 		  Select appointment = new Select(dropdown1);
 		  List<WebElement> appointmentOptions = appointment.getOptions(); // Get all options for the appointment type
@@ -51,7 +51,9 @@ public class LocationDropdown extends FDUtils
 			          Thread.sleep(4000);
 			          driver.findElement(By.xpath("//button[@class='calendly-popup-close']")).click();
 			          count++;
-			          if (count == 22) {
+			          
+			          if (count == 22)
+			          {
 			                break; // Exit the inner loop
 			            }
 			          
