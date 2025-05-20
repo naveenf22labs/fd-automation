@@ -11,13 +11,13 @@
       </run>
     </groups>
     <classes>
-      <class name="jewelry.com.TennisBraceletsFlow">
+      <class name="jewelry.com.NecklacesFlow">
         <methods>
           <include name="launchUrl"/>
-          <include name="tennisBracelets"/>
+          <include name="jewelryEarRingFlow"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- jewelry.com.TennisBraceletsFlow -->
+      </class> <!-- jewelry.com.NecklacesFlow -->
     </classes>
   </test> <!-- JewelryFlowTests(failed) -->
   <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
@@ -34,13 +34,6 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- weddings.library.com.MenWeddingBands -->
-      <class name="weddings.library.com.AnniversaryRings">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="anniversaryRingFlow"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- weddings.library.com.AnniversaryRings -->
     </classes>
   </test> <!-- Wedding Navbar Flow Testcases(failed) -->
   <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
@@ -50,13 +43,13 @@
       </run>
     </groups>
     <classes>
-      <class name="cartCheckout.SettingsJewelryWeddingItems">
+      <class name="cartCheckout.DiamondsCombinationToCart">
         <methods>
           <include name="launchUrl"/>
-          <include name="cancelProductsFromCart"/>
+          <include name="defaultDiamondAndNormalDiamonds"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
+      </class> <!-- cartCheckout.DiamondsCombinationToCart -->
       <class name="cartCheckout.MultipleDefaultDiamondsToCart">
         <methods>
           <include name="launchUrl"/>
@@ -64,6 +57,13 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
+      <class name="cartCheckout.SettingsJewelryWeddingItems">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="cancelProductsFromCart"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
       <class name="cartCheckout.RemovingJewelryProducts">
         <methods>
           <include name="launchUrl"/>

@@ -24,6 +24,7 @@ public class MultipleProductsToCheckout extends FDUtils
         cart1.searchSettingForThisDiamond();
         cart1.clickRandomProduct(FDPageObjectData.diamondSettingPLP);
         //cart1.selectHarperRing();
+        cart1.selectRandomBandMaterial();
         cart1.addSettingToStone();
         // Thread.sleep(3000);
      //Adding jewelry product
@@ -31,16 +32,19 @@ public class MultipleProductsToCheckout extends FDUtils
     	cart1.earRingsOption();
     	cart1.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
     	//cart1.jewleryPlp();
+    	cart1.selectRandomBandMaterial();
     	cart1.addToCartButton();
          // Adding wedding products i.e., Anniversary and Gold bands.
     	cart1.clickWeddingLink();
     	cart1.selectAnniversaryOption();
     	cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+    	cart1.selectRandomBandMaterial();
     	cart1.addToCartButton();
     	// Adding Gold Band 
     	 cart1.clickWeddingLink();
 		  cart1.selectGoldBand();
 		  cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+		  cart1.selectRandomBandMaterial();
     	cart1.addToCartButton();
     	 Thread.sleep(2000);
        cart1.proceedToCheckout();

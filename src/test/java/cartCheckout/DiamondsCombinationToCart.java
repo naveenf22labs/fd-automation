@@ -25,12 +25,14 @@ public class DiamondsCombinationToCart  extends FDUtils
         cart.searchSettingForThisDiamond();
         cart.clickRandomProduct(FDPageObjectData.diamondSettingPLP);
        // cart.selectHarperRing();
+        cart.selectRandomBandMaterial();
         cart.addSettingToStone();
         // Adding default diamond to the cart
         cart.clickEngagementLink();
    	    cart.startWithSetting();
    	    cart.clickRandomProduct(FDPageObjectData.diamondSettingPLP);
       //  cart.selectHarperRing();
+   	    cart.selectRandomBandMaterial();
         cart.selectThisSetting();
         cart.defaultDiamond();
     	Thread.sleep(3000);

@@ -19,6 +19,7 @@ public class MultipleDefaultDiamondsToCart extends FDUtils
          cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP); 
          Thread.sleep(2000);
         // cart.selectHarperRing();
+         cart.selectRandomBandMaterial();
          cart.selectThisSetting();
          cart.defaultDiamond();
          cart.clickEngagementLink();
@@ -27,6 +28,7 @@ public class MultipleDefaultDiamondsToCart extends FDUtils
         // cart.closePopUp();
     	 cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
          //cart.selectHarperRing();
+    	 cart.selectRandomBandMaterial();
          cart.selectThisSetting();
          cart.defaultDiamond();
          //Thread.sleep(2000);

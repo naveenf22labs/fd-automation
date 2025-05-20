@@ -20,11 +20,13 @@ public class RemovingJewelryProducts extends FDUtils
 	    	cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	    	//cart.jewleryPlp();
 	    	cart.doubleClickReamazeWidget();
+	    	cart.selectRandomBandMaterial();
 	    	cart.addToCartButton();
 	    	cart.jewelryNav();
 			cart.selectTennisNecklace();
 			cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 			//cart.jewleryPlp();
+			cart.selectRandomBandMaterial();
 			cart.addToCartButton();
 			//adding Necklace+diamond combo
 			cart.jewelryNav();
@@ -32,6 +34,7 @@ public class RemovingJewelryProducts extends FDUtils
 	        Thread.sleep(2000);
 	        cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	    	//cart.jewleryPlp();
+	        cart.selectRandomBandMaterial();
 	    	cart.selectThisNecklaceButton();
 	    	// using diamond flow method only bcz we created unique xpath for reusability.
 	    	cart.searchSettingForThisDiamond();

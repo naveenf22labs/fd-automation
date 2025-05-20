@@ -20,24 +20,27 @@ public class RemovingWeddingProducts extends FDUtils
     
     	//anniversary.scrollToEndOfPage();
     	cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
-    	
+    	cart.selectRandomBandMaterial();
     	cart.addToCartButton();
     	//Adding goldband product to the cart.
     	cart.clickWeddingLink();
 		cart.selectGoldBand();	
 		cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+		cart.selectRandomBandMaterial();
 	    cart.addToCartButton();
 	    
 	    // Adding Diamond Bands to the cart.
 	    cart.clickWeddingLink();
    	    cart.selectDiamondBand();
    	    cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+   	    cart.selectRandomBandMaterial();
    	    cart.addToCartButton();
    	    //Adding Men Wedding bands to the cart.
    	 cart.clickWeddingLink();  
 	  cart.selectMenWeddingoption();
 	  cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
 	  //cart.doubleClickReamazeWidget();
+	  cart.selectRandomBandMaterial();
 	  cart.addToCartButton();
     	Thread.sleep(3000);
     	cart.cartFocusUp();

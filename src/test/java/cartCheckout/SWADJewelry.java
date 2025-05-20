@@ -29,6 +29,7 @@ public class SWADJewelry extends FDUtils
        // cart1.plpList1();
         cart1.clickRandomProduct(FDPageObjectData.diamondSettingPLP);
         //cart1.selectHarperRing();
+        cart1.selectRandomBandMaterial();
         cart1.addSettingToStone();
         cart1.cartFocusUp();
      Thread.sleep(3000);
@@ -39,6 +40,7 @@ public class SWADJewelry extends FDUtils
     	cart1.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
     	//cart1.jewleryPlp();
     	//cart1.doubleClickReamazeWidget();
+    	cart1.selectRandomBandMaterial();
     	cart1.addToCartButton();
         cart1.closeCart();
             // Adding wedding product
@@ -47,6 +49,7 @@ public class SWADJewelry extends FDUtils
     	cart1.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	//cart1.selectAnniversaryPlp();
     	//cart1.doubleClickReamazeWidget();
+    	cart1.selectRandomBandMaterial();
     	cart1.addToCartButton();
         Thread.sleep(3000);
     	cart1.cartFocusUp();

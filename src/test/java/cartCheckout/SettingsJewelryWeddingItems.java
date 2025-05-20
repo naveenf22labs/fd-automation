@@ -16,6 +16,7 @@ public class SettingsJewelryWeddingItems  extends FDUtils
 	    	 cart.startWithSetting();
 	    	 cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	        // cart.selectHarperRing();
+	    	 cart.selectRandomBandMaterial();
 	         cart.selectThisSetting();
 	         //reusing diamond button properties only  its mentioned diamond but it works for setting as well
 	         cart.searchSettingForThisDiamond(); 
@@ -30,15 +31,19 @@ public class SettingsJewelryWeddingItems  extends FDUtils
 	            cart.closeCart();
 	         cart.jewelryNav();
 	     	 cart.earRingsOption();
-	     	Thread.sleep(3000);
-	     	 cart.jewleryPlp();
+	     	//Thread.sleep(3000);
+	     	// cart.jewleryPlp();
+	     	 cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	     	//cart1.doubleClickReamazeWidget();
+	     	 cart.selectRandomBandMaterial();
 	     	 cart.addToCartButton();
 	         cart.closeCart();
 	             // Adding wedding product
 	         cart.clickWeddingLink();
 	     	 cart.selectAnniversaryOption();
-	     	 cart.selectAnniversaryPlp();
+	     	// cart.selectAnniversaryPlp();
+	     	cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+	     	cart.selectRandomBandMaterial();
 	     	 cart.addToCartButton();
 	         Thread.sleep(3000);
 	     	 cart.cartFocusUp();

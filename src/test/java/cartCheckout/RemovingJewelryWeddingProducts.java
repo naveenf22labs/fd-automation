@@ -17,11 +17,12 @@ public class RemovingJewelryWeddingProducts extends FDUtils
     	cart.closePopUp();
     	cart.jewleryPlp();
     	cart.doubleClickReamazeWidget();
+    	cart.selectRandomBandMaterial();
     	cart.addToCartButton();
     	cart.jewelryNav();
 		cart.selectTennisNecklace();
         cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
-		
+		cart.selectRandomBandMaterial();
 		cart.addToCartButton();
 		//adding Necklace+diamond combo
 		cart.jewelryNav();
@@ -29,6 +30,7 @@ public class RemovingJewelryWeddingProducts extends FDUtils
         Thread.sleep(2000);
         cart.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
     	//cart.jewleryPlp();
+        cart.selectRandomBandMaterial();
     	cart.selectThisNecklaceButton();
     	// using diamond flow method only bcz we created unique xpath for reusability.
     	cart.searchSettingForThisDiamond();
@@ -39,11 +41,13 @@ public class RemovingJewelryWeddingProducts extends FDUtils
     	cart.clickWeddingLink();
     	cart.selectAnniversaryOption();
     	cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+    	cart.selectRandomBandMaterial();
     	cart.addToCartButton();
     	//Adding goldBand product to the cart.
     	cart.clickWeddingLink();
 		cart.selectGoldBand();	
 		cart.clickRandomProduct(FDPageObjectData.weddingProductPLP);
+		cart.selectRandomBandMaterial();
 	    cart.addToCartButton();
     	Thread.sleep(3000);
     	cart.cartFocusUp();
