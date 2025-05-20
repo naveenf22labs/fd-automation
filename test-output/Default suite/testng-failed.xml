@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="cartCheckout.MultipleProductsToCheckout">
+      <class name="library.com.EngagementSettingFlow">
         <methods>
           <include name="launchUrl"/>
-          <include name="addingMultipleProductsToCheckout"/>
           <include name="tearDownAndClose"/>
+          <include name="startWithASetting"/>
         </methods>
-      </class> <!-- cartCheckout.MultipleProductsToCheckout -->
+      </class> <!-- library.com.EngagementSettingFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

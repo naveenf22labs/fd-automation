@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -484,6 +485,28 @@ public class FDPageObjectData
     }
     
     // selecting random dropdown elements for products in pdp.
+    private By bandMaterialDropdownSelector=By.xpath("(//select[@name='bandSelector'])[2]");
+    public void selectRandomBandMaterial() throws InterruptedException
+    {
+   	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+       // Wait until dropdown is visible
+        WebElement dropdownElement = wait.until(
+           ExpectedConditions.visibilityOfElementLocated(bandMaterialDropdownSelector));
+ 
+    	//WebElement dropdownElement = driver.findElement(bandMaterialDropdownSelector);
+        Select dropdown = new Select(dropdownElement);
+        List<WebElement> options = dropdown.getOptions();
+
+        int startIndex = 0; 
+        int randomIndex = new Random().nextInt(options.size() - startIndex) + startIndex;
+        WebElement randomOption = options.get(randomIndex);
+
+        String optionText = randomOption.getText();
+        dropdown.selectByVisibleText(optionText);
+
+        System.out.println("Randomly selected dropdown option: " + optionText);    	
+    }
     
   
 }

@@ -17,6 +17,7 @@ public class GiftGuide extends FDUtils
     	gift.closePopUp();
     	gift.doubleClickReamazeWidget();
     	gift.selectGiftGuidePlp();
+    	gift.selectRandomBandMaterial();
     	gift.addToCartButton();
         Thread.sleep(3000);
         gift.proceedToCheckout();

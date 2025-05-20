@@ -18,6 +18,7 @@ public class EngagementSettingFlow extends FDUtils
 	    	 engagementPage.startWithSetting();
 	    	 engagementPage.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	        // engagementPage.selectHarperRing();
+	    	 engagementPage.selectRandomBandMaterial();
 	         engagementPage.selectThisSetting();
 	         //reusing diamond button properties only  its mentioned diamond but it works for setting as well
 	         engagementPage.searchSettingForThisDiamond(); 

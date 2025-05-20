@@ -21,6 +21,7 @@ public class GoldBands  extends FDUtils
 		  // reusing diamond id locator in plp bcz id is same for all the plp 
 	    //  goldBandPage.selectDiamondBandProduct();
 	      //Thread.sleep(2000);
+		  goldBandPage.selectRandomBandMaterial();
 	      goldBandPage.addToCartButton();
 	      goldBandPage.proceedToCheckout();
 	      goldBandPage.checkoutValidation();

@@ -20,6 +20,7 @@ public class AnniversaryRings extends FDUtils
     	anniversary.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	//anniversary.selectAnniversaryPlp();
     	anniversary.doubleClickReamazeWidget();
+     anniversary.selectRandomBandMaterial();
     	anniversary.addToCartButton();
     	anniversary.proceedToCheckout();
     	anniversary.checkoutValidation();

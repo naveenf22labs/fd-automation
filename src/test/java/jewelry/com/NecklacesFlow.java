@@ -20,6 +20,7 @@ public class NecklacesFlow extends FDUtils {
 	    	necklaces.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
 	    	//necklaces.jewleryPlp();
 	    	necklaces.doubleClickReamazeWidget();
+	    	necklaces.selectRandomBandMaterial();
 	    	necklaces.selectThisNecklaceButton();
 	    	// using diamond flow method only bcz we created unique xpath for reusability.
 	    	necklaces.searchSettingForThisDiamond();

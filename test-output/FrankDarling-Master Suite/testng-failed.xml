@@ -18,13 +18,6 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- jewelry.com.TennisBraceletsFlow -->
-      <class name="jewelry.com.NecklacesFlow">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="jewelryEarRingFlow"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- jewelry.com.NecklacesFlow -->
     </classes>
   </test> <!-- JewelryFlowTests(failed) -->
   <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
@@ -34,6 +27,13 @@
       </run>
     </groups>
     <classes>
+      <class name="weddings.library.com.MenWeddingBands">
+        <methods>
+          <include name="menWeddingBands"/>
+          <include name="launchUrl"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- weddings.library.com.MenWeddingBands -->
       <class name="weddings.library.com.AnniversaryRings">
         <methods>
           <include name="launchUrl"/>
@@ -50,6 +50,13 @@
       </run>
     </groups>
     <classes>
+      <class name="cartCheckout.SettingsJewelryWeddingItems">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="cancelProductsFromCart"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
       <class name="cartCheckout.MultipleDefaultDiamondsToCart">
         <methods>
           <include name="launchUrl"/>
@@ -57,6 +64,13 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
+      <class name="cartCheckout.RemovingJewelryProducts">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="removingJewelryProductsFromCart"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- cartCheckout.RemovingJewelryProducts -->
     </classes>
   </test> <!-- Cart-Checkout Related Testcases(failed) -->
 </suite> <!-- Failed suite [FrankDarling-Master Suite] -->

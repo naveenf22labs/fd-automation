@@ -17,6 +17,7 @@ public class TennisBraceletsFlow  extends FDUtils
 		tennis.closePopUp();
 		tennis.doubleClickReamazeWidget();
 		tennis.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
+		tennis.selectRandomBandMaterial();
 		tennis.addToCartButton();
 		tennis.proceedToCheckout();
 		tennis.checkoutValidation();

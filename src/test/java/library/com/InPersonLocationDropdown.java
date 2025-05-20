@@ -10,10 +10,10 @@ import org.testng.annotations.Test;
 import pageobjects.com.FDPageObjectData;
 import utils.com.FDUtils;
 
-public class LocationDropdown extends FDUtils
+public class InPersonLocationDropdown extends FDUtils
 
 {
-	@Test(description=" Verifying all combinations of booking appointments and location dropdown selections.")
+	@Test(groups = "diamond", description=" Verifying all combinations of booking appointments and location dropdown selections.")
 	public void bookingAppointments() throws InterruptedException
 	{
 		  FDPageObjectData dropdown= new FDPageObjectData(driver);
@@ -52,7 +52,7 @@ public class LocationDropdown extends FDUtils
 			          driver.findElement(By.xpath("//button[@class='calendly-popup-close']")).click();
 			          count++;
 			          
-			          if (count == 22)
+			          if (count == 30)
 			          {
 			                break; // Exit the inner loop
 			            }
@@ -61,8 +61,8 @@ public class LocationDropdown extends FDUtils
 		    	 
 		    	  
 		      }
-		      // If the counter reaches 22, break out of the outer loop as well
-		      if (count == 22) 
+		      // If the counter reaches 30, break out of the outer loop as well
+		      if (count == 30) 
 		      {
 		          break; // Exit the outer loop
 		      }

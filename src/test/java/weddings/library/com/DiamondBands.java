@@ -19,6 +19,7 @@ public class DiamondBands extends FDUtils
     	 diamondBand.doubleClickReamazeWidget();
     	 diamondBand.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	// diamondBand.selectDiamondBandProduct();
+    	 diamondBand.selectRandomBandMaterial();
     	 diamondBand.addToCartButton();
     	 diamondBand.proceedToCheckout();
     	 diamondBand.checkoutValidation();

@@ -19,6 +19,7 @@ public class EternityBand extends FDUtils
    	    eternityBand.doubleClickReamazeWidget();
    	    eternityBand.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     //	eternityBand.selectDiamondBandProduct();
+   	    eternityBand.selectRandomBandMaterial();
     	eternityBand.addToCartButton();
     	eternityBand.proceedToCheckout();
     	eternityBand.checkoutValidation();
