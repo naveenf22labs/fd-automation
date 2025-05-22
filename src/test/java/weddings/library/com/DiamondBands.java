@@ -20,6 +20,7 @@ public class DiamondBands extends FDUtils
     	 diamondBand.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	// diamondBand.selectDiamondBandProduct();
     	 diamondBand.selectRandomBandMaterial();
+    	 diamondBand.ringSizer();
     	 diamondBand.addToCartButton();
     	 diamondBand.proceedToCheckout();
     	 diamondBand.checkoutValidation();

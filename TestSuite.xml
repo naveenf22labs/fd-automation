@@ -17,8 +17,7 @@
         <classes>
             <class name="library.com.EngagementDiamondFlow" />
             <class name="library.com.EngagementSettingFlow" />
-            <class name="library.com.InPersonLocationDropdown" />
-            <class name="library.com.ClientServicesDropdowns" />
+           
 
 
         </classes>

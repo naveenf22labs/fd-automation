@@ -20,6 +20,7 @@ public class StackingRings extends FDUtils
     	stacking.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     	//stacking.stackingRingsplp();
     	stacking.selectRandomBandMaterial();
+    	stacking.ringSizer();
     	stacking.addToCartButton();
     	stacking.proceedToCheckout();
     	stacking.checkoutValidation();

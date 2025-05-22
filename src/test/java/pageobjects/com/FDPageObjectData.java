@@ -486,7 +486,38 @@ public class FDPageObjectData
     
     // selecting random dropdown elements for products in pdp.
     private By bandMaterialDropdownSelector=By.xpath("(//select[@name='bandSelector'])[2]");
-    public void selectRandomBandMaterial() throws InterruptedException
+    private By tennisLength=By.xpath("(//select[@name='braceletLength'])[2]");
+    private By ringSize=By.xpath("(//select[@name='sizeSelector'])[2]");
+
+    public void selectRandomOption(By dropdownLocator, String dropdownName) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement dropdownElement = wait.until(ExpectedConditions.visibilityOfElementLocated(dropdownLocator));
+        Select dropdown = new Select(dropdownElement);
+        List<WebElement> options = dropdown.getOptions();
+
+        if (options.size() > 0) {
+            int randomIndex = new Random().nextInt(options.size());  // skip placeholder
+            WebElement randomOption = options.get(randomIndex);
+            dropdown.selectByVisibleText(randomOption.getText());
+            System.out.println("Selected random option for " + dropdownName + ": " + randomOption.getText());
+        } else {
+            System.out.println("No valid options found for " + dropdownName);
+        }
+    }
+    
+    public void selectRandomBandMaterial() {
+        selectRandomOption(bandMaterialDropdownSelector, "Band Material");
+    }
+
+    public void ringSizer() {
+        selectRandomOption(ringSize, "Ring Size");
+    }
+
+    public void tennisTotalLength() {
+        selectRandomOption(tennisLength, "Tennis Length");
+    }
+
+  /*  public void selectRandomBandMaterial() throws InterruptedException
     {
    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -507,6 +538,53 @@ public class FDPageObjectData
 
         System.out.println("Randomly selected dropdown option: " + optionText);    	
     }
+    
+       
+       public void ringSizer() 
+       {
+    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    	       // Wait until dropdown is visible
+    	        WebElement dropdownElement = wait.until(
+    	           ExpectedConditions.visibilityOfElementLocated(ringSize));
+    	 
+    	    	//WebElement dropdownElement = driver.findElement(bandMaterialDropdownSelector);
+    	        Select dropdown = new Select(dropdownElement);
+    	        List<WebElement> options = dropdown.getOptions();
+
+    	        int startIndex = 0; 
+    	        int randomIndex = new Random().nextInt(options.size() - startIndex) + startIndex;
+    	        WebElement randomOption = options.get(randomIndex);
+
+    	        String optionText = randomOption.getText();
+    	        dropdown.selectByVisibleText(optionText);
+
+    	        System.out.println("Randomly selected ring size is: " + optionText);   
+       }
+       
+      
+       public void tennisTotalLength() 
+       {
+    		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    	       // Wait until dropdown is visible
+    	        WebElement dropdownElement = wait.until(
+    	           ExpectedConditions.visibilityOfElementLocated(tennisLength));
+    	 
+    	    	//WebElement dropdownElement = driver.findElement(bandMaterialDropdownSelector);
+    	        Select dropdown = new Select(dropdownElement);
+    	        List<WebElement> options = dropdown.getOptions();
+
+    	        int startIndex = 0; 
+    	        int randomIndex = new Random().nextInt(options.size() - startIndex) + startIndex;
+    	        WebElement randomOption = options.get(randomIndex);
+
+    	        String optionText = randomOption.getText();
+    	        dropdown.selectByVisibleText(optionText);
+
+    	        System.out.println("Randomly selected ring size is: " + optionText);   
+       } */
+       
     
   
 }

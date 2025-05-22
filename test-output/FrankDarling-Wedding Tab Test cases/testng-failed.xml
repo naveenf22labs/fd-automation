@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [FrankDarling-Wedding Tab Test cases]">
-  <test thread-count="5" name="MenWeddingBandsFlowTest(failed)">
+  <listeners>
+    <listener class-name="utils.com.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="WeddingEternityBandsFlowTest(failed)">
     <classes>
-      <class name="weddings.library.com.MenWeddingBands">
-        <methods>
-          <include name="menWeddingBands"/>
-          <include name="launchUrl"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- weddings.library.com.MenWeddingBands -->
-    </classes>
-  </test> <!-- MenWeddingBandsFlowTest(failed) -->
-  <test thread-count="5" name="WeddingAnniversaryFlowTest(failed)">
-    <classes>
-      <class name="weddings.library.com.AnniversaryRings">
+      <class name="weddings.library.com.EternityBand">
         <methods>
           <include name="launchUrl"/>
-          <include name="anniversaryRingFlow"/>
           <include name="tearDownAndClose"/>
+          <include name="eternityBandFlow"/>
         </methods>
-      </class> <!-- weddings.library.com.AnniversaryRings -->
+      </class> <!-- weddings.library.com.EternityBand -->
     </classes>
-  </test> <!-- WeddingAnniversaryFlowTest(failed) -->
+  </test> <!-- WeddingEternityBandsFlowTest(failed) -->
+  <test thread-count="5" name="WeddingGoldBandsFlowTest(failed)">
+    <classes>
+      <class name="weddings.library.com.GoldBands">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="tearDownAndClose"/>
+          <include name="goldBands"/>
+        </methods>
+      </class> <!-- weddings.library.com.GoldBands -->
+    </classes>
+  </test> <!-- WeddingGoldBandsFlowTest(failed) -->
 </suite> <!-- Failed suite [FrankDarling-Wedding Tab Test cases] -->

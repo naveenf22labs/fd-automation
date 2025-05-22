@@ -21,6 +21,7 @@ public class MenWeddingBands  extends FDUtils
 		  //clicking on add to cart button in pdp
 		  weddingPage.doubleClickReamazeWidget();
 		  weddingPage.selectRandomBandMaterial();
+		  weddingPage.ringSizer();
 		  weddingPage.addToCartButton();
 		  weddingPage.proceedToCheckout();
 		  weddingPage.checkoutValidation();

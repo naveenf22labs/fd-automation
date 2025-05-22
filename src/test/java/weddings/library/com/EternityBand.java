@@ -20,6 +20,7 @@ public class EternityBand extends FDUtils
    	    eternityBand.clickRandomProduct(FDPageObjectData.weddingProductPLP);
     //	eternityBand.selectDiamondBandProduct();
    	    eternityBand.selectRandomBandMaterial();
+   	    eternityBand.ringSizer();
     	eternityBand.addToCartButton();
     	eternityBand.proceedToCheckout();
     	eternityBand.checkoutValidation();

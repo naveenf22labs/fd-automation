@@ -19,6 +19,7 @@ public class EarRings extends FDUtils
     	earRings.clickRandomProduct(FDPageObjectData.jewelryProductsPLP);
     	earRings.doubleClickReamazeWidget();
     	earRings.selectRandomBandMaterial();
+    	
     	earRings.addToCartButton();
     	earRings.proceedToCheckout();
     	earRings.checkoutValidation();

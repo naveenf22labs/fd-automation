@@ -11,13 +11,13 @@
       </run>
     </groups>
     <classes>
-      <class name="jewelry.com.NecklacesFlow">
+      <class name="jewelry.com.GiftGuide">
         <methods>
           <include name="launchUrl"/>
-          <include name="jewelryEarRingFlow"/>
+          <include name="giftGuideFlow"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- jewelry.com.NecklacesFlow -->
+      </class> <!-- jewelry.com.GiftGuide -->
     </classes>
   </test> <!-- JewelryFlowTests(failed) -->
   <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
@@ -34,6 +34,13 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- weddings.library.com.MenWeddingBands -->
+      <class name="weddings.library.com.AnniversaryRings">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="anniversaryRingFlow"/>
+          <include name="tearDownAndClose"/>
+        </methods>
+      </class> <!-- weddings.library.com.AnniversaryRings -->
     </classes>
   </test> <!-- Wedding Navbar Flow Testcases(failed) -->
   <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
@@ -43,20 +50,6 @@
       </run>
     </groups>
     <classes>
-      <class name="cartCheckout.DiamondsCombinationToCart">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="defaultDiamondAndNormalDiamonds"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.DiamondsCombinationToCart -->
-      <class name="cartCheckout.MultipleDefaultDiamondsToCart">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="defaultDiamondCombinations"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
       <class name="cartCheckout.SettingsJewelryWeddingItems">
         <methods>
           <include name="launchUrl"/>

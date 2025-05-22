@@ -22,6 +22,7 @@ public class GoldBands  extends FDUtils
 	    //  goldBandPage.selectDiamondBandProduct();
 	      //Thread.sleep(2000);
 		  goldBandPage.selectRandomBandMaterial();
+		  goldBandPage.ringSizer();
 	      goldBandPage.addToCartButton();
 	      goldBandPage.proceedToCheckout();
 	      goldBandPage.checkoutValidation();
