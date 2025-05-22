@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="library.com.EngagementSettingFlow">
+      <class name="jewelry.com.NecklaceWithDefaultDiamond">
         <methods>
           <include name="launchUrl"/>
+          <include name="NecklaceDefaultDiamondFlow"/>
           <include name="tearDownAndClose"/>
-          <include name="startWithASetting"/>
         </methods>
-      </class> <!-- library.com.EngagementSettingFlow -->
+      </class> <!-- jewelry.com.NecklaceWithDefaultDiamond -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

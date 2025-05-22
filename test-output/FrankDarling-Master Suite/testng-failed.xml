@@ -4,6 +4,22 @@
   <listeners>
     <listener class-name="utils.com.RetryListener"/>
   </listeners>
+  <test thread-count="5" name="DiamondFlowTests(failed)">
+    <groups>
+      <run>
+        <include name="diamond"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="library.com.EngagementSettingFlow">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="tearDownAndClose"/>
+          <include name="startWithASetting"/>
+        </methods>
+      </class> <!-- library.com.EngagementSettingFlow -->
+    </classes>
+  </test> <!-- DiamondFlowTests(failed) -->
   <test thread-count="5" name="JewelryFlowTests(failed)">
     <groups>
       <run>
@@ -34,13 +50,6 @@
           <include name="tearDownAndClose"/>
         </methods>
       </class> <!-- weddings.library.com.MenWeddingBands -->
-      <class name="weddings.library.com.AnniversaryRings">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="anniversaryRingFlow"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- weddings.library.com.AnniversaryRings -->
     </classes>
   </test> <!-- Wedding Navbar Flow Testcases(failed) -->
   <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
@@ -50,20 +59,13 @@
       </run>
     </groups>
     <classes>
-      <class name="cartCheckout.SettingsJewelryWeddingItems">
+      <class name="cartCheckout.MultipleDefaultDiamondsToCart">
         <methods>
           <include name="launchUrl"/>
-          <include name="cancelProductsFromCart"/>
+          <include name="defaultDiamondCombinations"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- cartCheckout.SettingsJewelryWeddingItems -->
-      <class name="cartCheckout.RemovingJewelryProducts">
-        <methods>
-          <include name="launchUrl"/>
-          <include name="removingJewelryProductsFromCart"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- cartCheckout.RemovingJewelryProducts -->
+      </class> <!-- cartCheckout.MultipleDefaultDiamondsToCart -->
     </classes>
   </test> <!-- Cart-Checkout Related Testcases(failed) -->
 </suite> <!-- Failed suite [FrankDarling-Master Suite] -->
