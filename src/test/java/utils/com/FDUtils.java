@@ -20,7 +20,11 @@ public class FDUtils
 	{
 		//System.out.println(" Launching browser in @BeforeMethod");
 		ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
+        	options.addArguments("--incognito");
+		options.addArguments("--headless=new");
+		options.addArguments("--no-sandbox");
+        	options.addArguments("--disable-dev-shm-usage");
+        	options.addArguments("--window-size=1920,1080");
 		
 		 driver=new ChromeDriver(options);
 	  //  driver.manage().window().setSize(new org.openqa.selenium.Dimension(1920, 1080)); // Set size for Full HD resolution
