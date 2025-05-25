@@ -1,0 +1,36 @@
+name: Nightly Test Automation
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Every day at 2:00 AM UTC
+  workflow_dispatch:      # Optional: allows manual trigger from GitHub UI
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'  # Change if you're using a different version
+
+      - name: Cache Maven packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+      - name: Run Tests using testng.xml
+        run: mvn clean test -DsuiteXmlFile=TestSuite.xml
+
+      - name: Upload TestNG Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: TestNGReport
+          path: test-output/testng-results.xml
