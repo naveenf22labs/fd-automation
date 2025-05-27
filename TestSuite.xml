@@ -23,7 +23,7 @@
         </classes>
     </test>
 
-  <!--  &lt;!&ndash; Jewelry Tests (Necklaces and Tennis Bracelets) &ndash;&gt;
+    <!-- Jewelry Tests (Necklaces and Tennis Bracelets) -->
     <test name="JewelryFlowTests">
         <groups>
             <run>
@@ -31,7 +31,7 @@
             </run>
         </groups>
         <classes>
-           &lt;!&ndash; <class name="jewelry.com.GiftGuide" />&ndash;&gt;
+           <!-- <class name="jewelry.com.GiftGuide" />-->
             <class name="jewelry.com.EarRings" />
             <class name="jewelry.com.NecklacesFlow" />
             <class name="jewelry.com.NecklaceWithDefaultDiamond"/>
@@ -70,6 +70,6 @@
             <class name="cartCheckout.DiamondsCombinationToCart" />
 
         </classes>
-    </test>-->
+    </test>
 
 </suite>
