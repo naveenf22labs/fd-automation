@@ -2,6 +2,7 @@ package library.com;
 
 import java.util.List;
 
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -16,8 +17,11 @@ public class InPersonLocationDropdown extends FDUtils
 	@Test(groups = "diamond", description=" Verifying all combinations of booking appointments and location dropdown selections.")
 	public void bookingAppointments() throws InterruptedException
 	{
+		//  Initialize ExtentTest logger
+		ExtentTest logger = getExtentInstance().createTest("In person dropdown locations  Flow Test");
+		test.set(logger);
 		  FDPageObjectData dropdown= new FDPageObjectData(driver);
-		  
+		test.get().info("Client service dropdowns functionality");
 		  dropdown.showrooms();
 		  dropdown.virtualAppointments();
 		  dropdown.closePopUp();

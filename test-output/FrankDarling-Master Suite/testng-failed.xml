@@ -27,31 +27,15 @@
       </run>
     </groups>
     <classes>
-      <class name="jewelry.com.GiftGuide">
+      <class name="jewelry.com.TennisBraceletsFlow">
         <methods>
           <include name="launchUrl"/>
-          <include name="giftGuideFlow"/>
           <include name="tearDownAndClose"/>
+          <include name="tennisBracelets"/>
         </methods>
-      </class> <!-- jewelry.com.GiftGuide -->
+      </class> <!-- jewelry.com.TennisBraceletsFlow -->
     </classes>
   </test> <!-- JewelryFlowTests(failed) -->
-  <test thread-count="5" name="Wedding Navbar Flow Testcases(failed)">
-    <groups>
-      <run>
-        <include name="Wedding"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="weddings.library.com.MenWeddingBands">
-        <methods>
-          <include name="menWeddingBands"/>
-          <include name="launchUrl"/>
-          <include name="tearDownAndClose"/>
-        </methods>
-      </class> <!-- weddings.library.com.MenWeddingBands -->
-    </classes>
-  </test> <!-- Wedding Navbar Flow Testcases(failed) -->
   <test thread-count="5" name="Cart-Checkout Related Testcases(failed)">
     <groups>
       <run>

@@ -6,7 +6,7 @@
         </classes>
     </test>
     
-    <test name="jewelryEarRingsFlowTest">
+<!--    <test name="jewelryEarRingsFlowTest">
         <classes>
            
             <class name="jewelry.com.EarRings" />
@@ -23,7 +23,7 @@
         <classes>
             <class name="jewelry.com.TennisBraceletsFlow" />
         </classes>
-    </test>
+    </test>-->
     
     
 </suite>

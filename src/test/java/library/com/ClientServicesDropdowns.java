@@ -2,6 +2,7 @@ package library.com;
 
 import java.util.List;
 
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -18,8 +19,12 @@ public class ClientServicesDropdowns extends FDUtils
 	@Test(groups = "diamond", description=" Verifying all combinations of booking pick-up and drop-off dropdown selections.")
 	public void bookingAppointments() throws InterruptedException
 	{
+
+		//  Initialize ExtentTest logger
+		ExtentTest logger = getExtentInstance().createTest("Client services dropdown Flow Test");
+		test.set(logger);
 		  FDPageObjectData dropdown= new FDPageObjectData(driver);
-		  
+		 test.get().info("Client service dropdowns functionality");
 		  dropdown.showrooms();
 		  dropdown.virtualAppointments();
 		  dropdown.closePopUp();

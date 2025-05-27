@@ -76,7 +76,7 @@ public class FDPageObjectData
     private By  addDiamondToNecklaceButtonXpath= By.xpath("(//button[text()='Add diamond to necklace'])[1]");
     private By tennisNecklaceXpath=By.xpath("(//span[text()='Tennis Bracelets'])[1]");
     private By giftGuideXpath=By.xpath("//span[text()='Gift Guide']");
-    private By  giftGuidePlp=By.xpath("(//button[@value='Continue'])[2]");
+    private By  giftGuidePlp=By.xpath("(//button[@value='Continue'])[5]");
     
     //Cart                  
     private By  closeCartXpath= By.xpath("//button[@aria-label='Close cart']");
@@ -488,6 +488,8 @@ public class FDPageObjectData
     private By bandMaterialDropdownSelector=By.xpath("(//select[@name='bandSelector'])[2]");
     private By tennisLength=By.xpath("(//select[@name='braceletLength'])[2]");
     private By ringSize=By.xpath("(//select[@name='sizeSelector'])[2]");
+    private By caratWeight=By.xpath("(//select[@name='caratWeightSelector'])[2]");
+    private By stoneTypeXpath=By.xpath("(//select[@name='diamondType'])[2]");
 
     public void selectRandomOption(By dropdownLocator, String dropdownName) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -515,6 +517,13 @@ public class FDPageObjectData
 
     public void tennisTotalLength() {
         selectRandomOption(tennisLength, "Tennis Length");
+    }
+    public void totalCaratWeight() {
+    	selectRandomOption(caratWeight, "Total carat weight");
+    }
+    public void stoneType()
+    {
+    	selectRandomOption(stoneTypeXpath, "StoneType");
     }
 
   /*  public void selectRandomBandMaterial() throws InterruptedException

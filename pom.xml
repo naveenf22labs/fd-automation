@@ -62,6 +62,12 @@
             <version>2.11.0</version>
         </dependency>
 
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version> <!-- or the latest -->
+</dependency>
+
 
     </dependencies>
 

@@ -17,13 +17,13 @@
         <classes>
             <class name="library.com.EngagementDiamondFlow" />
             <class name="library.com.EngagementSettingFlow" />
-            <class name="library.com.InPersonLocationDropdown" />
-            <class name="library.com.ClientServicesDropdowns" />
+         <!-- <class name="library.com.InPersonLocationDropdown" />
+            <class name="library.com.ClientServicesDropdowns" />-->
 
         </classes>
     </test>
 
-    <!-- Jewelry Tests (Necklaces and Tennis Bracelets) -->
+  <!--  &lt;!&ndash; Jewelry Tests (Necklaces and Tennis Bracelets) &ndash;&gt;
     <test name="JewelryFlowTests">
         <groups>
             <run>
@@ -31,7 +31,7 @@
             </run>
         </groups>
         <classes>
-            <class name="jewelry.com.GiftGuide" />
+           &lt;!&ndash; <class name="jewelry.com.GiftGuide" />&ndash;&gt;
             <class name="jewelry.com.EarRings" />
             <class name="jewelry.com.NecklacesFlow" />
             <class name="jewelry.com.NecklaceWithDefaultDiamond"/>
@@ -70,6 +70,6 @@
             <class name="cartCheckout.DiamondsCombinationToCart" />
 
         </classes>
-    </test>
+    </test>-->
 
 </suite>

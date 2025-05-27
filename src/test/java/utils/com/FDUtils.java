@@ -9,11 +9,24 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 
 public class FDUtils
 {
 	
 	public static WebDriver driver;
+	public static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    private static ExtentReports extent;
+
+    // Initialize ExtentReports instance
+    public static ExtentReports getExtentInstance() {
+        if (extent == null) {
+            extent = ExtentManager.getInstance();
+        }
+        return extent;
+    }
 
 	@BeforeMethod(alwaysRun = true)
 	public void launchUrl()
@@ -21,7 +34,7 @@ public class FDUtils
 		//System.out.println(" Launching browser in @BeforeMethod");
 		ChromeOptions options = new ChromeOptions();
         	options.addArguments("--incognito");
-		options.addArguments("--headless=new");
+	//	options.addArguments("--headless=new");
 		options.addArguments("--no-sandbox");
         	options.addArguments("--disable-dev-shm-usage");
         	options.addArguments("--window-size=1920,1080");
@@ -44,6 +57,8 @@ public class FDUtils
 	    if (driver != null) {
 	        driver.quit();
 	    }
+	    getExtentInstance().flush();
+
 	}
 
 	

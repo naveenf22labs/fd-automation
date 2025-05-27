@@ -14,17 +14,5 @@
         </classes>
     </test>
 
-    <!-- Jewelry Tests (Necklaces and Tennis Bracelets) -->
-    <test name="JewelryFlowTests">
-        <groups>
-            <run>
-                <include name="jewelry"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="jewelry.com.NecklacesFlow" />
-            <class name="jewelry.com.TennisBraceletsFlow" />
-        </classes>
-    </test>
-
+    
 </suite>

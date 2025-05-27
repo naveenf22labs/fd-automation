@@ -38,5 +38,5 @@ jobs:
       - name: Upload TestNG Report
         uses: actions/upload-artifact@v4
         with:
-          name: TestNGReport
-          path: test-output/testng-results.xml
+          name: extent-report
+          path: test-output/ExtentReport.xml

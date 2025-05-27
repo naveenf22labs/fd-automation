@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="jewelry.com.NecklaceWithDefaultDiamond">
+      <class name="jewelry.com.GiftGuide">
         <methods>
           <include name="launchUrl"/>
-          <include name="NecklaceDefaultDiamondFlow"/>
+          <include name="giftGuideFlow"/>
           <include name="tearDownAndClose"/>
         </methods>
-      </class> <!-- jewelry.com.NecklaceWithDefaultDiamond -->
+      </class> <!-- jewelry.com.GiftGuide -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
