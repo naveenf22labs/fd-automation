@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: extent-report
-          path: test-output/ExtentReport.xml
+          path: test-output/ExtentReport.html
